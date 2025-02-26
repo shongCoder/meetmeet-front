@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import LoadingComponent from "../components/LoadingComponent";
 
@@ -8,7 +8,7 @@ const Login = lazy(() => import("../pages/LoginPage"));
 
 const Loading = <LoadingComponent />;
 
-const mainRouter = createBrowserRouter([
+const mainRouter = createHashRouter([
   {
     element: <Layout />,
     children: [
@@ -29,10 +29,6 @@ const mainRouter = createBrowserRouter([
         ),
       },
     ],
-  },
-  {
-    path: "*",
-    element: <div>404 Not Found</div>, // Fallback 경로
   },
 ]);
 

@@ -5,6 +5,6 @@ import mainRouter from "./routers/mainRouter.jsx";
 
 createRoot(document.getElementById("root")).render(
   <div className="font-sans">
-    <RouterProvider router={mainRouter} basename="meetmeet"></RouterProvider>
+    <RouterProvider router={mainRouter} basename="/meetmeet-front" />
   </div>
 );
