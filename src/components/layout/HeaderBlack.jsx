@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {NavLink} from "react-router-dom";
 
 const HeaderBlack = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,9 +33,21 @@ const HeaderBlack = () => {
           } lg:max-h-none lg:opacity-100 lg:pb-0`}
         >
           <ul className="lg:flex lg:space-x-6 py-6 flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 p-0 m-0 text-meet_menu">
-            <li>고객지원</li>
-            <li>포인트 환전</li>
-            <li>앱 다운로드</li>
+            <li>
+              <NavLink to="/support" className={({ isActive }) => (isActive ? "font-bold text-meet_pink" : "")}>
+                고객지원
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/exchange" className={({ isActive }) => (isActive ? "font-bold text-meet_pink" : "")}>
+                포인트 환전
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/download" className={({ isActive }) => (isActive ? "font-bold text-meet_pink" : "")}>
+                앱 다운로드
+              </NavLink>
+            </li>
           </ul>
         </div>
 
