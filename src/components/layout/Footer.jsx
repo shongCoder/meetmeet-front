@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="w-full items-start text-meet_text overflow-hidden">
       <div className="lg:px-[6.25rem] md:px-8 px-5 text-left">
         <div className="lg:w-[9.125rem] w-[6.875rem] lg:mt-[3.75rem] mt-4 !ml-0">
-          <img src="/meetmeet_logo_b.png" alt="MeetMeet Logo" />
+          <img src="./meetmeet_logo_b.png" alt="MeetMeet Logo" />
         </div>
         {/* 웹 버전 */}
         <div className="lg:block hidden">
@@ -86,7 +86,7 @@ const Footer = () => {
               className={`!m-0 transition-transform duration-300 ${
                 isOpen ? "rotate-180" : "rotate-0"
               }`}
-              src="/img/arrow-down.png"
+              src="./img/arrow-down.png"
             />
           </div>
 

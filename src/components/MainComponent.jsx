@@ -4,7 +4,7 @@ const MainComponent = () => {
   return (
     <>
       {/* main intro */}
-      <div className="relative bg-meet_black text-meet_white lg:w-full lg:h-[60rem] h-[50.75rem] flex justify-start bg-[url('../../public/img/main/main_visual.png')] bg-cover bg-center">
+      <div className="relative bg-meet_black text-meet_white lg:w-full lg:h-[60rem] h-[50.75rem] flex justify-start bg-[url('./img/main/main_visual.png')] bg-cover bg-center">
         <div className="w-full pt-80 bg-gradient-to-b from-gray-950/100 to-transparent">
           <div className="lg:px-[6.25rem] md:px-8 px-5 text-left">
             <div className="lg:text-[3.25rem] text-[1.5rem] font-bold lg:leading-[4.25rem] leading-9">
@@ -23,7 +23,7 @@ const MainComponent = () => {
       {/* 실시간 영상통화 */}
       <div className="pt-32">
         <div className="lg:w-36 w-20">
-          <img src="../../public/img/main/AO.png" />
+          <img src="./img/main/AO.png" />
         </div>
         <div className="text-meet_black font-bold lg:text-[3.25rem] text-[1.75rem]">
           실시간 영상통화
@@ -33,9 +33,9 @@ const MainComponent = () => {
           소통을 경험해보세요.
         </div>
         <div>
-          <img src="/img/main/Picture.png" className="hidden lg:block" />
+          <img src="./img/main/Picture.png" className="hidden lg:block" />
           <img
-            src="/img/main/Picture-1-m.png"
+            src="./img/main/Picture-1-m.png"
             className="block lg:hidden w-[20.875rem]"
           />
         </div>
@@ -44,7 +44,7 @@ const MainComponent = () => {
       {/* 일상 공유 */}
       <div className="pt-32 bg-meet_black">
         <div className="w-36">
-          <img src="../../public/img/main/mugs.png" />
+          <img src="./img/main/mugs.png" />
         </div>
         <div className="text-meet_gray font-bold lg:text-[3.25rem] text-[1.75rem]">
           일상 공유
@@ -54,9 +54,9 @@ const MainComponent = () => {
           이야기가 됩니다.
         </div>
         <div>
-          <img src="/img/main/Picture-2.png" className="hidden lg:block" />
+          <img src="./img/main/Picture-2.png" className="hidden lg:block" />
           <img
-            src="/img/main/Picture-2-m.png"
+            src="./img/main/Picture-2-m.png"
             className="block lg:hidden w-[20.875rem]"
           />
         </div>
@@ -65,7 +65,7 @@ const MainComponent = () => {
       {/* 채팅 */}
       <div className="pt-32">
         <div className="w-36">
-          <img src="../../public/img/main/notifications.png" />
+          <img src="./img/main/notifications.png" />
         </div>
         <div className="text-meet_black font-bold lg:text-[3.25rem] text-[1.75rem]">
           채팅
@@ -75,9 +75,9 @@ const MainComponent = () => {
           소통을 경험해보세요.
         </div>
         <div>
-          <img src="/img/main/Picture-3.png" className="hidden lg:block" />
+          <img src="./img/main/Picture-3.png" className="hidden lg:block" />
           <img
-            src="/img/main/Picture-3-m.png"
+            src="./img/main/Picture-3-m.png"
             className="block lg:hidden w-[20.875rem]"
           />
         </div>
@@ -86,7 +86,7 @@ const MainComponent = () => {
       {/* 일상 공유 */}
       <div className="pt-32 bg-meet_light_gray">
         <div className="w-36">
-          <img src="../../public/img/main/Unlock.png" />
+          <img src="./img/main/Unlock.png" />
         </div>
         <div className="text-meet_black font-bold lg:text-[3.25rem] text-[1.75rem]">
           나만의 멤버십 서비스
@@ -96,9 +96,9 @@ const MainComponent = () => {
           멤버십으로 제공하며, 당신의 가치를 공유하세요.
         </div>
         <div>
-          <img src="/img/main/Picture-4.png" className="hidden lg:block" />
+          <img src="./img/main/Picture-4.png" className="hidden lg:block" />
           <img
-            src="/img/main/Picture-4-m.png"
+            src="./img/main/Picture-4-m.png"
             className="block lg:hidden w-[20.875rem]"
           />
         </div>

@@ -8,7 +8,7 @@ const HeaderBlack = () => {
       <div className="lg:px-[6.25rem] md:px-8 px-5 text-meet_menu flex h-full items-center">
         {/* 로고 */}
         <div className="lg:w-52 w-28 m-0">
-          <img src="/meetmeet_logo_b.png" alt="MeetMeet Logo" />
+          <img src="./meetmeet_logo_b.png" alt="MeetMeet Logo" />
         </div>
 
         {/* 모바일 메뉴 아이콘 */}
@@ -17,7 +17,7 @@ const HeaderBlack = () => {
           onClick={() => setIsOpen(!isOpen)}
         >
           <img
-            src="img/menu_ico.png"
+            src="./img/menu_ico.png"
             alt="Menu Icon"
             className="cursor-pointer"
           />

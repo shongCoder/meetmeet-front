@@ -13,9 +13,9 @@ const HeaderWhite = () => {
         {/* 로고 */}
         <div className="lg:w-52 w-28 m-0">
           {isOpen ? (
-            <img src="/meetmeet_logo_b.png" alt="MeetMeet Logo" />
+            <img src="./meetmeet_logo_b.png" alt="MeetMeet Logo" />
           ) : (
-            <img src="/meetmeet_logo.png" alt="MeetMeet Logo" />
+            <img src="./meetmeet_logo.png" alt="MeetMeet Logo" />
           )}
         </div>
 
@@ -25,7 +25,7 @@ const HeaderWhite = () => {
           onClick={() => setIsOpen(!isOpen)}
         >
           <img
-            src="img/menu_ico.png"
+            src="./img/menu_ico.png"
             alt="Menu Icon"
             className="cursor-pointer"
           />
