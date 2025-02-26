@@ -4,7 +4,7 @@ const MainComponent = () => {
   return (
     <>
       {/* main intro */}
-      <div className="relative bg-meet_black text-meet_white lg:w-full lg:h-[60rem] h-[50.75rem] flex justify-start bg-[url('./meetmeet-front/img/main/main_visual.png')] bg-cover bg-center">
+      <div className="relative bg-meet_black text-meet_white lg:w-full lg:h-[60rem] h-[50.75rem] flex justify-start bg-[url('/img/main/main_visual.png')] bg-cover bg-center">
         <div className="w-full pt-80 bg-gradient-to-b from-gray-950/100 to-transparent">
           <div className="lg:px-[6.25rem] md:px-8 px-5 text-left">
             <div className="lg:text-[3.25rem] text-[1.5rem] font-bold lg:leading-[4.25rem] leading-9">
