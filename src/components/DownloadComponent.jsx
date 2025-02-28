@@ -2,7 +2,7 @@ function DownloadComponent() {
   return (
     <div>
       {/*웹 버전*/}
-      <div className="h-[60rem] bg-[url('/img/download/download_visual.png')] bg-cover lg:bg-center md:bg-right md:bg-[-20rem] px-[6.25rem] flex lg:block md:block hidden">
+      <div className="h-[60rem] bg-[url('/img/download/download_visual.png')] bg-cover lg:bg-center md:bg-right md:bg-[-20rem] lg:px-[6.25rem] flex lg:block md:block hidden">
         <div className="lg:w-[50%] md:w-full h-[60rem] flex items-center lg:bg-meet_black/0 md:to-transparent md:bg-meet_black/80">
           <div>
             <img src="./img/download/app_icon.png" className="w-[16.375rem]" />
