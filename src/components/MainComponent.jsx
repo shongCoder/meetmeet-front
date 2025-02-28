@@ -3,7 +3,7 @@ const MainComponent = () => {
     <>
       {/* main intro */}
       <div className="relative bg-meet_black text-meet_white lg:w-full lg:h-[60rem] md:h-[64rem] h-[50.75rem] flex justify-start bg-[url('/img/main/main_visual.png')] bg-cover bg-center">
-        <div className="w-full lg:pt-80 md:pt-[23rem] pt-[17.25 rem] bg-gradient-to-b from-gray-950/100 to-transparent d">
+        <div className="w-full lg:pt-80 md:pt-[23rem] pt-[17.25rem] bg-gradient-to-b from-gray-950/100 to-transparent d">
           <div className="lg:px-[6.25rem] md:px-8 px-5 text-left">
             <div className="lg:text-[3.25rem] md:text-[3.25rem] text-[1.5rem] font-bold lg:leading-[4.25rem] md:leading-[4.25rem] leading-9">
               모두가 주인공이 되는 공간 <br /> 소통하고, 공유하고, 소유하다.

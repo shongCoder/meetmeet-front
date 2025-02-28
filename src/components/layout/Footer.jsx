@@ -97,7 +97,7 @@ const Footer = () => {
             }`}
           >
             <div className="mt-7">
-              <ul className="flex justify-between font-semibold text-[0.875rem]">
+              <ul className="flex font-semibold text-[0.6875rem]">
                 <li className="mr-4">이용약관</li>
                 <li className="mr-4 font-light text-meet_gray">|</li>
                 <li className="text-meet_sodomy mr-4">개인정보처리방침</li>
@@ -105,30 +105,20 @@ const Footer = () => {
                 <li>운영정책</li>
               </ul>
             </div>
-            <div className="mt-4 text-left text-[0.8125rem] w-full">
+            <div className="mt-4 text-left text-[0.625rem] w-full">
               <div>
                 <div>
-                  <span className="font-medium">상호 : </span>
-                  <span>(주)케이비즈플래닛</span>
-                </div>
-                <div>
-                  <span className="font-medium">대표 : </span>
+                  <span className="inline-block font-medium">대표 : </span>
                   <span>황성연</span>
+                  <span className="inline-block ml-2 font-medium">사업자 등록번호 : </span>
+                  <span>126-86-35315</span>
                 </div>
+              </div>
+              <div>
                 <div>
                   <span className="font-medium">주소 : </span>
                   <span>경기도 광주시 문형산길 93, 202-에이8호</span>
                 </div>
-                <div>
-                  <span className="font-medium">사업자 등록번호 : </span>
-                  <span>126-86-35315</span>
-                </div>
-                <div>
-                  <span className="font-medium">통신판매업 신고번호 : </span>
-                  <span>2023-용인기흥-2891</span>
-                </div>
-              </div>
-              <div>
                 <div>
                   <span className="font-medium">이메일 : </span>
                   <span>meetmeet.help@gmail.com</span>
