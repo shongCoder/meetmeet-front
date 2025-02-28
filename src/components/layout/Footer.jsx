@@ -68,8 +68,66 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* 태블릿 버전 */}
+        <div className="items-start lg:hidden md:block hidden">
+          {/* 버튼 & 이미지 */}
+          <div className="w-full text-3 pl-3 pr-1 py-1 border border-meet_gray rounded-full flex justify-between items-center flex-shrink-0 mt-6">
+            <p className="text-[0.8125rem]">궁금한 내용이 있으신가요?</p>
+            <button className="px-6 py-3 bg-meet_black text-meet_white font-bold text-[0.8125rem] rounded-full">
+              이메일 문의하기
+            </button>
+          </div>
+          <div className="lg:hidden md:block hidden">
+            <div className="mt-7">
+              <ul className="flex font-semibold text-[0.875rem]">
+                <li className="mr-4">이용약관</li>
+                <li className="mr-4 font-light text-meet_gray">|</li>
+                <li className="text-meet_sodomy mr-4">개인정보처리방침</li>
+                <li className="mr-4 font-light text-meet_gray">|</li>
+                <li>운영정책</li>
+              </ul>
+            </div>
+            <div className="mt-4 text-left text-[0.8125rem] flex w-full justify-between items-end">
+              <div className="flex-1">
+                <div>
+                  <div className="inline-block mr-3">
+                    <span className="font-medium">상호 : </span>
+                    <span>(주)케이비즈플래닛</span>
+                  </div>
+                  <div className="inline-block mr-3">
+                    <span className="font-medium">대표 : </span>
+                    <span>황성연</span>
+                  </div>
+                  <div className="inline-block mr-3">
+                    <span className="font-medium">주소 : </span>
+                    <span>경기도 광주시 문형산길 93, 202-에이8호</span>
+                  </div>
+                  <div className="inline-block mr-3">
+                    <span className="font-medium">사업자 등록번호 : </span>
+                    <span>126-86-35315</span>
+                  </div>
+                </div>
+                <div>
+                  <div className="inline-block mr-3">
+                    <span className="font-medium">통신판매업 신고번호 : </span>
+                    <span>2023-용인기흥-2891</span>
+                  </div>
+                  <div className="inline-block mr-3">
+                    <span className="font-medium">이메일 : </span>
+                    <span>meetmeet.help@gmail.com</span>
+                  </div>
+                  <div className="inline-block">
+                    <span className="font-medium">상담전화 : </span>
+                    <span>070-000-0000</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* 모바일 버전 */}
-        <div className="items-start lg:hidden block">
+        <div className="items-start lg:hidden md:hidden block">
           {/* 버튼 & 이미지 */}
           <div className="w-full text-3 pl-3 pr-1 py-1 border border-meet_gray rounded-full flex justify-between items-center flex-shrink-0 mt-6">
             <p className="text-[0.8125rem]">궁금한 내용이 있으신가요?</p>
