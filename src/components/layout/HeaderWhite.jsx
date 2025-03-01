@@ -14,11 +14,11 @@ const HeaderWhite = () => {
         {/* 로고 */}
         <div className="lg:w-52 md:w-[9.125rem] w-28 m-0">
           <NavLink to="/" onClick={() => setIsOpen(false)}>
-          {isOpen ? (
-            <img src="./meetmeet_logo_b.png" alt="MeetMeet Logo" />
-          ) : (
-            <img src="./meetmeet_logo.png" alt="MeetMeet Logo" />
-          )}
+            {isOpen ? (
+              <img src="./meetmeet_logo_b.png" alt="MeetMeet Logo" />
+            ) : (
+              <img src="./meetmeet_logo.png" alt="MeetMeet Logo" />
+            )}
           </NavLink>
         </div>
 
@@ -45,7 +45,7 @@ const HeaderWhite = () => {
           <ul className="lg:flex md:flex lg:space-x-6 md:space-x-6 py-6 lg:text-meet_white md:text-meet_white flex flex-col lg:flex-row md:flex-row items-center space-y-4 lg:space-y-0 md:space-y-0 p-0 m-0 text-meet_menu">
             <li>
               <NavLink
-                  onClick={() => setIsOpen(!isOpen)}
+                onClick={() => setIsOpen(!isOpen)}
                 to="/support"
                 className={({ isActive }) =>
                   isActive ? "font-bold text-meet_pink" : ""
@@ -56,7 +56,18 @@ const HeaderWhite = () => {
             </li>
             <li>
               <NavLink
-                  onClick={() => setIsOpen(!isOpen)}
+                onClick={() => setIsOpen(!isOpen)}
+                to="/influencer"
+                className={({ isActive }) =>
+                  isActive ? "font-bold text-meet_pink" : ""
+                }
+              >
+                밋밋셀럽
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                onClick={() => setIsOpen(!isOpen)}
                 to="/exchange"
                 className={({ isActive }) =>
                   isActive ? "font-bold text-meet_pink" : ""
@@ -67,7 +78,7 @@ const HeaderWhite = () => {
             </li>
             <li>
               <NavLink
-                  onClick={() => setIsOpen(!isOpen)}
+                onClick={() => setIsOpen(!isOpen)}
                 to="/download"
                 className={({ isActive }) =>
                   isActive ? "font-bold text-meet_pink" : ""
@@ -76,24 +87,15 @@ const HeaderWhite = () => {
                 앱 다운로드
               </NavLink>
             </li>
-            <li>
-              <NavLink
-                  onClick={() => setIsOpen(!isOpen)}
-                  to="/influencer"
-                  className={({ isActive }) =>
-                      isActive ? "font-bold text-meet_pink" : ""
-                  }
-              >
-                인플루언서 모집
-              </NavLink>
-            </li>
           </ul>
         </div>
 
         {/* 로그인 버튼 */}
         <div
           className={`lg:static md:static absolute top-[calc(12rem)] left-0 w-full lg:w-auto md:w-auto flex justify-center md:justify-end lg:justify-end transition-all duration-500 ease-in-out overflow-hidden ${
-            isOpen ? "max-h-[100px] opacity-100 mt-14" : "max-h-0 opacity-0 mt-0"
+            isOpen
+              ? "max-h-[100px] opacity-100 mt-14"
+              : "max-h-0 opacity-0 mt-0"
           } lg:max-h-none lg:opacity-100 lg:mt-0 md:max-h-none md:opacity-100 md:mt-0`}
         >
           <button className="lg:w-32 md:w-32 px-5 py-[0.375rem] bg-meet_pink rounded-3xl font-bold flex items-center justify-center whitespace-nowrap">
