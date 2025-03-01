@@ -1,0 +1,1 @@
+import{j as n}from"./index-CB7zVb0k.js";function e(){return n.jsx("div",{children:n.jsx("h1",{children:"ExchangeComponent"})})}function x(){return n.jsxs("div",{children:[n.jsx("h1",{children:"ExchangePage"}),n.jsx(e,{})]})}export{x as default};
