@@ -164,6 +164,72 @@ function SupportComponent() {
           </div>
         </div>
       </div>
+
+      <div className="pt-[12.5rem] px-[6.25rem] w-full ">
+        <div className="">
+          <img src="./img/support/AO.png" className="w-[6.25rem]" />
+        </div>
+        <div className="text-meet_black text-center font-bold lg:text-[3.25rem] md:text-[3.25rem] text-[1.75rem] mb-2">
+          자주 묻는 질문
+        </div>
+        <div className="text-meet_text text-center lg:text-[1.25rem] md:text-[1.25rem] text-[0.875rem] mt-2 mb-8 w-full">
+          Frequently Asked Questions
+        </div>
+        <div className="lg:px-[13.75rem] md:px-8 px-5 w-full">
+          {/* 아코디언 리스트 */}
+          {[
+            {
+              title: "가입은 어디서 하나요?",
+              content:
+                "밋밋 MeetMeet 서비스는 단순한 플랫폼을 넘어, 사람과 사람을 연결하고 당신의 일상에 특별함을 더하는 공간힙니다. 다양한 기능을 통해 새로운 경험을 제안합니다.",
+            },
+            {
+              title: "미성년자도 이용이 가능한가요?",
+              content:
+                "밋밋 MeetMeet 서비스는 단순한 플랫폼을 넘어, 사람과 사람을 연결하고 당신의 일상에 특별함을 더하는 공간힙니다. 다양한 기능을 통해 새로운 경험을 제안합니다.",
+            },
+            {
+              title: "탈퇴 어떻게 하나요?",
+              content:
+                "앱 > 설정 > 탈퇴하기 메뉴를 통해서 탈퇴하실 수 있습니다.",
+            },
+          ].map((item, index) => (
+            <div key={index}>
+              {/* 제목 (클릭하면 해당 항목만 열리고 닫힘) */}
+              <div
+                onClick={() => toggleAccordion(index)}
+                className="flex items-center justify-between mt-10 cursor-pointer"
+              >
+                <span className="text-left text-[1.5rem] font-semibold flex-1">
+                  {item.title}
+                </span>
+                {openIndex === index ? (
+                  <img src="./img/support/minus.png" className="w-6" />
+                ) : (
+                  <img src="./img/support/add.png" className="w-6" />
+                )}
+              </div>
+
+              {/* 내용 (해당 항목이 열렸을 때만 표시) */}
+              <div
+                className={`overflow-hidden transition-[max-height] duration-500 ease-in-out ${
+                  openIndex === index ? "max-h-[1000px]" : "max-h-0"
+                }`}
+              >
+                <p className="text-meet_text text-[1.25rem] mt-5 leading-8">
+                  {item.content}
+                </p>
+              </div>
+
+              <div className="w-full bg-meet_gray h-[1px] mt-6"></div>
+            </div>
+          ))}
+        </div>
+        <div className="text-meet_text text-center mt-9 mb-[6.25rem]">
+          <span>더 궁금하신 내용이 있나요?</span>
+          <span className="font-medium text-meet_sodomy">문의하기</span>
+        </div>
+      </div>
     </>
   );
 }
