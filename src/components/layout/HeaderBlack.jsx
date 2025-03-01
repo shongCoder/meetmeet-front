@@ -9,7 +9,9 @@ const HeaderBlack = () => {
       <div className="lg:px-[6.25rem] md:px-8 px-5 text-meet_menu flex h-full items-center">
         {/* 로고 */}
         <div className="lg:w-52 md:w-[9.125rem] w-28 m-0">
-          <img src="./meetmeet_logo_b.png" alt="MeetMeet Logo" />
+          <NavLink to="/" onClick={() => setIsOpen(false)}>
+            <img src="./meetmeet_logo_b.png" alt="MeetMeet Logo" />
+          </NavLink>
         </div>
 
         {/* 모바일 메뉴 아이콘 */}
@@ -35,6 +37,7 @@ const HeaderBlack = () => {
           <ul className="lg:flex md:flex lg:space-x-6 md:space-x-6 py-6 flex flex-col lg:flex-row md:flex-row items-center space-y-4 lg:space-y-0 md:space-y-0 p-0 m-0 text-meet_menu">
             <li>
               <NavLink
+                  onClick={() => setIsOpen(!isOpen)}
                 to="/support"
                 className={({ isActive }) =>
                   isActive ? "font-bold text-meet_pink" : ""
@@ -45,6 +48,7 @@ const HeaderBlack = () => {
             </li>
             <li>
               <NavLink
+                  onClick={() => setIsOpen(!isOpen)}
                 to="/exchange"
                 className={({ isActive }) =>
                   isActive ? "font-bold text-meet_pink" : ""
@@ -55,6 +59,7 @@ const HeaderBlack = () => {
             </li>
             <li>
               <NavLink
+                  onClick={() => setIsOpen(!isOpen)}
                 to="/download"
                 className={({ isActive }) =>
                   isActive ? "font-bold text-meet_pink" : ""
