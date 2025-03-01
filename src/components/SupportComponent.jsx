@@ -109,7 +109,7 @@ function SupportComponent() {
         {/* 게시물 박스 */}
         <div className="mt-20 flex items-center justify-between gap-6">
           <div className="bg-meet_white p-6 w-full rounded-[1.25rem] border border-meet_gray">
-            <div className="w-full h-[13.8rem] bg-[url('./img/support/blog-1.png')] bg-cover bg-center rounded-[0.75rem]"></div>
+            <div className="w-full h-[13.8rem] bg-[url('/img/support/blog-1.png')] bg-cover bg-center rounded-[0.75rem]"></div>
             <div className="w-full">
               <div className="text-[1.5rem] font-bold mt-5">
                 사회적 기업의 가치와 사회적 영향력
@@ -130,7 +130,7 @@ function SupportComponent() {
           </div>
           <div className="w-full flex flex-col gap-5 h-full">
             <div className="w-full p-6 bg-meet_white flex items-center justify-between gap-[1.875rem] rounded-[1.25rem] border border-meet_gray">
-              <div className="w-60 h-[8.75rem] bg-[url('./img/support/blog-2.png')] bg-cover bg-center rounded-[0.75rem]"></div>
+              <div className="w-60 h-[8.75rem] bg-[url('/img/support/blog-2.png')] bg-cover bg-center rounded-[0.75rem]"></div>
               <div className="w-[19.25rem]">
                 <div className="text-[1.5rem] w-full text-ellipsis line-clamp-1 font-bold">
                   자기 계발의 시작:5가지 효과적인 방법
@@ -146,7 +146,7 @@ function SupportComponent() {
               </div>
             </div>
             <div className="w-full p-6 bg-meet_white flex items-center justify-between gap-[1.875rem] rounded-[1.25rem] border border-meet_gray">
-              <div className="w-60 h-[8.75rem] bg-[url('./img/support/blog-3.png')] bg-cover bg-center rounded-[0.75rem]"></div>
+              <div className="w-60 h-[8.75rem] bg-[url('/img/support/blog-3.png')] bg-cover bg-center rounded-[0.75rem]"></div>
               <div className="w-[19.25rem]">
                 <div className="text-[1.5rem] w-full text-ellipsis line-clamp-1 font-bold">
                   창의력을 끌어올리는 방법:아이들에게 좋은 놀이
