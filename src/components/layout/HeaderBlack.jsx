@@ -28,7 +28,7 @@ const HeaderBlack = () => {
 
         {/* 네비게이션 메뉴 */}
         <div
-          className={`lg:flex md:flex lg:justify-center md:justify-center lg:mr-12 md:mr-12 absolute md:static lg:static top-[3.5rem] left-0 w-full bg-meet_white lg:bg-transparent md:bg-transparent transition-all duration-500 ease-in-out overflow-hidden ${
+          className={`lg:flex md:flex lg:justify-center md:justify-center absolute md:static lg:static top-[3.5rem] left-0 w-full bg-meet_white lg:bg-transparent md:bg-transparent transition-all duration-500 ease-in-out overflow-hidden ${
             isOpen
               ? "max-h-[300px] pb-16 opacity-100"
               : "max-h-0 pb-0 opacity-0"
@@ -68,12 +68,23 @@ const HeaderBlack = () => {
                 앱 다운로드
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                  onClick={() => setIsOpen(!isOpen)}
+                  to="/influencer"
+                  className={({ isActive }) =>
+                      isActive ? "font-bold text-meet_pink" : ""
+                  }
+              >
+                인플루언서 모집
+              </NavLink>
+            </li>
           </ul>
         </div>
 
         {/* 로그인 버튼 */}
         <div
-          className={`lg:ml-4 md:ml-4 lg:static md:static absolute top-[calc(12rem)] left-0 w-full lg:w-auto md:w-auto flex justify-center md:justify-end lg:justify-end transition-all duration-500 ease-in-out overflow-hidden ${
+          className={`lg:static md:static absolute top-[calc(12rem)] left-0 w-full lg:w-auto md:w-auto flex justify-center md:justify-end lg:justify-end transition-all duration-500 ease-in-out overflow-hidden ${
             isOpen ? "max-h-[100px] opacity-100 mt-4" : "max-h-0 opacity-0 mt-0"
           } lg:max-h-none lg:opacity-100 lg:mt-0 md:max-h-none md:opacity-100 md:mt-0`}
         >

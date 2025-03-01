@@ -77,14 +77,15 @@ const HeaderWhite = () => {
               </NavLink>
             </li>
             <li>
-              <div
+              <NavLink
                   onClick={() => setIsOpen(!isOpen)}
+                  to="/influencer"
                   className={({ isActive }) =>
                       isActive ? "font-bold text-meet_pink" : ""
                   }
               >
                 인플루언서 모집
-              </div>
+              </NavLink>
             </li>
           </ul>
         </div>
