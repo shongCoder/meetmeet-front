@@ -85,7 +85,7 @@ const HeaderBlack = () => {
         {/* 로그인 버튼 */}
         <div
           className={`lg:static md:static absolute top-[calc(12rem)] left-0 w-full lg:w-auto md:w-auto flex justify-center md:justify-end lg:justify-end transition-all duration-500 ease-in-out overflow-hidden ${
-            isOpen ? "max-h-[100px] opacity-100 mt-4" : "max-h-0 opacity-0 mt-0"
+            isOpen ? "max-h-[100px] opacity-100 mt-14" : "max-h-0 opacity-0 mt-0"
           } lg:max-h-none lg:opacity-100 lg:mt-0 md:max-h-none md:opacity-100 md:mt-0`}
         >
           <button className="lg:w-32 md:w-32 px-5 py-[0.375rem] text-meet_white bg-meet_pink rounded-3xl font-bold flex items-center justify-center whitespace-nowrap">
