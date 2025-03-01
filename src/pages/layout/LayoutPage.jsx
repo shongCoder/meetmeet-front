@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Footer from "../../components/layout/Footer";
 import HeaderBlack from "../../components/layout/HeaderBlack";
 import HeaderWhite from "../../components/layout/HeaderWhite";
+import TopButton from "../../components/layout/TopButton.jsx";
 
 const LayoutPage = () => {
   const [isWhiteHeader, setIsWhiteHeader] = useState(true);
@@ -38,6 +39,7 @@ const LayoutPage = () => {
       <Outlet />
 
       <Footer />
+        <TopButton />
     </div>
   );
 };
