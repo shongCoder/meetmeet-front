@@ -74,13 +74,15 @@ const HeaderBlack = () => {
                   포인트 환전
                 </NavLink>
               ) : (
-                <div
+                <NavLink
+                  onClick={() => setIsOpen(!isOpen)}
+                  to="/login"
                   className={({ isActive }) =>
                     isActive ? "font-bold text-meet_pink" : ""
                   }
                 >
                   포인트 환전
-                </div>
+                </NavLink>
               )}
             </li>
             <li>
