@@ -1,8 +1,13 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import useAuthStore from "../../store/authStore.js";
 
 const HeaderBlack = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const token = useAuthStore((state) => state.token);
+
+  const clearToken = useAuthStore((state) => state.clearToken);
 
   return (
     <div className="lg:h-20 fixed top-0 left-0 w-full z-50 h-[3.5rem] bg-meet_white opacity-95">
@@ -58,15 +63,25 @@ const HeaderBlack = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink
-                onClick={() => setIsOpen(!isOpen)}
-                to="/exchange"
-                className={({ isActive }) =>
-                  isActive ? "font-bold text-meet_pink" : ""
-                }
-              >
-                포인트 환전
-              </NavLink>
+              {token ? (
+                <NavLink
+                  onClick={() => setIsOpen(!isOpen)}
+                  to="/exchange"
+                  className={({ isActive }) =>
+                    isActive ? "font-bold text-meet_pink" : ""
+                  }
+                >
+                  포인트 환전
+                </NavLink>
+              ) : (
+                <div
+                  className={({ isActive }) =>
+                    isActive ? "font-bold text-meet_pink" : ""
+                  }
+                >
+                  포인트 환전
+                </div>
+              )}
             </li>
             <li>
               <NavLink
@@ -91,7 +106,13 @@ const HeaderBlack = () => {
           } lg:max-h-none lg:opacity-100 lg:mt-0 md:max-h-none md:opacity-100 md:mt-0`}
         >
           <button className="lg:w-32 md:w-32 px-5 py-[0.375rem] text-meet_white bg-meet_pink rounded-3xl font-bold flex items-center justify-center whitespace-nowrap">
-            <NavLink to="/login">로그인</NavLink>
+            {token ? (
+              <NavLink to="/" onClick={clearToken}>
+                로그아웃
+              </NavLink>
+            ) : (
+              <NavLink to="/login">로그인</NavLink>
+            )}
           </button>
         </div>
       </div>

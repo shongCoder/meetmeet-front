@@ -1,8 +1,16 @@
 import { useState } from "react";
 import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/outline";
+import useAuthStore from "../store/authStore.js";
+import { NavLink } from "react-router-dom";
 
 function LoginComponent() {
   const [showPassword, setShowPassword] = useState(false);
+
+  const setToken = useAuthStore((state) => state.setToken);
+
+  const handleLogin = () => {
+    setToken("exampleToken123"); // 여기서 임의의 텍스트 토큰 저장
+  };
 
   return (
     <div className="w-full lg:px-[6.25rem] md:px-8 px-5 flex lg:justify-between lg:flex-row md:flex-col lg:pt-[13.375rem] md:pt-[13.375rem] pt-[7.5rem] pb-[8.75rem]">
@@ -52,12 +60,15 @@ function LoginComponent() {
                 )}
               </button>
             </div>
-            <button
-              style={{ boxShadow: "0px 5px 10px rgba(26, 26, 26, 0.1)" }}
-              className="bg-meet_pink rounded-[0.75rem] w-full text-center py-4 text-meet_white font-bold lg:mt-[4.25rem] md:mt-[4.25rem] mt-11"
-            >
-              로그인
-            </button>
+            <NavLink to="/">
+              <button
+                onClick={handleLogin}
+                style={{ boxShadow: "0px 5px 10px rgba(26, 26, 26, 0.1)" }}
+                className="bg-meet_pink rounded-[0.75rem] w-full text-center py-4 text-meet_white font-bold lg:mt-[4.25rem] md:mt-[4.25rem] mt-11"
+              >
+                로그인
+              </button>
+            </NavLink>
           </form>
         </div>
         <div className="w-[12.25rem] flex gap-5 mt-6">
