@@ -1,5 +1,11 @@
+import LoginComponent from "../components/LoginComponent.jsx";
+
 function LoginPage() {
-  return <div>login</div>;
+  return (
+    <div>
+      <LoginComponent />
+    </div>
+  );
 }
 
 export default LoginPage;

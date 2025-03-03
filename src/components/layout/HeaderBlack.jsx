@@ -91,7 +91,7 @@ const HeaderBlack = () => {
           } lg:max-h-none lg:opacity-100 lg:mt-0 md:max-h-none md:opacity-100 md:mt-0`}
         >
           <button className="lg:w-32 md:w-32 px-5 py-[0.375rem] text-meet_white bg-meet_pink rounded-3xl font-bold flex items-center justify-center whitespace-nowrap">
-            로그인
+            <NavLink to="/login">로그인</NavLink>
           </button>
         </div>
       </div>
