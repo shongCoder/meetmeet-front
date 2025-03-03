@@ -41,7 +41,7 @@ function SupportComponent() {
         </div>
 
         {/* 배경 그라데이션 (웹 & 태블릿: 기본 그라데이션, 모바일: 하단에서 시작) */}
-        <div className="absolute inset-0 lg:bg-gradient-to-b md:bg-gradient-to-b w-full from-black/100 to-transparent bg-gradient-to-t md:bg-none z-10"></div>
+        <div className="absolute inset-0 lg:bg-gradient-to-b md:bg-gradient-to-b w-full from-black/100 to-transparent bg-gradient-to-t z-10"></div>
       </div>
 
       {/* 이용 안내 */}
