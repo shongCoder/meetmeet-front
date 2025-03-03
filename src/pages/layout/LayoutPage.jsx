@@ -5,6 +5,7 @@ import Footer from "../../components/layout/Footer";
 import HeaderBlack from "../../components/layout/HeaderBlack";
 import HeaderWhite from "../../components/layout/HeaderWhite";
 import TopButton from "../../components/layout/TopButton.jsx";
+import ModalComponent from "../../components/common/ModalComponent.jsx";
 
 const LayoutPage = () => {
   const [isWhiteHeader, setIsWhiteHeader] = useState(true);
@@ -37,9 +38,10 @@ const LayoutPage = () => {
       {/* 본문 */}
 
       <Outlet />
+      <ModalComponent />
 
       <Footer />
-        <TopButton />
+      <TopButton />
     </div>
   );
 };

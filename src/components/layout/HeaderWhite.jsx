@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import useAuthStore from "../../store/authStore.js";
+import useModalStore from "../../store/modalStore.js";
 
 const HeaderWhite = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,6 +9,16 @@ const HeaderWhite = () => {
   const token = useAuthStore((state) => state.token);
 
   const clearToken = useAuthStore((state) => state.clearToken);
+
+  const openModal = useModalStore((state) => state.openModal);
+
+  const handleNavClick = (event, path) => {
+    setIsOpen(false); // ✅ 메뉴 닫기
+    if (!token && path === "/exchange") {
+      event.preventDefault();
+      openModal("로그인이 필요합니다.", "/login"); // ✅ 로그인 안 되어 있으면 모달 띄우기 & 닫으면 로그인 페이지 이동
+    }
+  };
 
   return (
     <div
@@ -71,27 +82,15 @@ const HeaderWhite = () => {
               </NavLink>
             </li>
             <li>
-              {token ? (
-                <NavLink
-                  onClick={() => setIsOpen(!isOpen)}
-                  to="/exchange"
-                  className={({ isActive }) =>
-                    isActive ? "font-bold text-meet_pink" : ""
-                  }
-                >
-                  포인트 환전
-                </NavLink>
-              ) : (
-                <NavLink
-                  onClick={() => setIsOpen(!isOpen)}
-                  to="/login"
-                  className={({ isActive }) =>
-                    isActive ? "font-bold text-meet_pink" : ""
-                  }
-                >
-                  포인트 환전
-                </NavLink>
-              )}
+              <NavLink
+                to="/exchange"
+                onClick={(e) => handleNavClick(e, "/exchange")}
+                className={({ isActive }) =>
+                  isActive ? "font-bold text-meet_pink" : ""
+                }
+              >
+                포인트 환전
+              </NavLink>
             </li>
             <li>
               <NavLink
