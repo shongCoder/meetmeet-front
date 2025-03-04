@@ -57,26 +57,30 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="pl-6 pr-3 py-2 border border-meet_gray rounded-full flex items-center flex-shrink-0">
-              <p className="text-[0.8125rem] mr-10">
-                궁금한 내용이 있으신가요?
-              </p>
-              <button className="px-7 py-3 bg-meet_black text-meet_white font-bold text-[0.875rem] rounded-full">
-                이메일 문의하기
-              </button>
-            </div>
+            <a href="mailto:#">
+              <div className="pl-6 pr-3 py-2 border border-meet_gray rounded-full flex items-center flex-shrink-0">
+                <p className="text-[0.8125rem] mr-10">
+                  궁금한 내용이 있으신가요?
+                </p>
+                <button className="px-7 py-3 bg-meet_black text-meet_white font-bold text-[0.875rem] rounded-full">
+                  이메일 문의하기
+                </button>
+              </div>
+            </a>
           </div>
         </div>
 
         {/* 태블릿 버전 */}
         <div className="items-start lg:hidden md:block hidden">
           {/* 버튼 & 이미지 */}
-          <div className="w-full text-3 pl-3 pr-1 py-1 border border-meet_gray rounded-full flex justify-between items-center flex-shrink-0 mt-6">
-            <p className="text-[0.8125rem]">궁금한 내용이 있으신가요?</p>
-            <button className="px-6 py-3 bg-meet_black text-meet_white font-bold text-[0.8125rem] rounded-full">
-              이메일 문의하기
-            </button>
-          </div>
+          <a href="mailto:#">
+            <div className="w-full text-3 pl-3 pr-1 py-1 border border-meet_gray rounded-full flex justify-between items-center flex-shrink-0 mt-6">
+              <p className="text-[0.8125rem]">궁금한 내용이 있으신가요?</p>
+              <button className="px-6 py-3 bg-meet_black text-meet_white font-bold text-[0.8125rem] rounded-full">
+                이메일 문의하기
+              </button>
+            </div>
+          </a>
           <div className="lg:hidden md:block hidden">
             <div className="mt-7">
               <ul className="flex font-semibold text-[0.875rem]">
@@ -129,17 +133,19 @@ const Footer = () => {
         {/* 모바일 버전 */}
         <div className="items-start lg:hidden md:hidden block">
           {/* 버튼 & 이미지 */}
-          <div className="w-full text-3 pl-3 pr-1 py-1 border border-meet_gray rounded-full flex justify-between items-center flex-shrink-0 mt-6">
-            <p className="text-[0.8125rem]">궁금한 내용이 있으신가요?</p>
-            <button className="px-6 py-3 bg-meet_black text-meet_white font-bold text-[0.8125rem] rounded-full">
-              이메일 문의하기
-            </button>
-          </div>
+          <a href="mailto:#">
+            <div className="w-full text-3 pl-3 pr-1 py-1 border border-meet_gray rounded-full flex justify-between items-center flex-shrink-0 mt-6">
+              <p className="text-[0.8125rem]">궁금한 내용이 있으신가요?</p>
+              <button className="px-6 py-3 bg-meet_black text-meet_white font-bold text-[0.8125rem] rounded-full">
+                이메일 문의하기
+              </button>
+            </div>
+          </a>
           <div
             className="flex items-center justify-start cursor-pointer mt-6"
             onClick={() => setIsOpen(!isOpen)}
           >
-            <span className="!m-0 pr-1">(주)케이비즈플래닛</span>
+            <span className="!m-0 pr-1 text-[0.75rem]">(주)케이비즈플래닛</span>
             <img
               className={`!m-0 transition-transform duration-300 ${
                 isOpen ? "rotate-180" : "rotate-0"
@@ -154,21 +160,23 @@ const Footer = () => {
               isOpen ? "max-h-[1000px]" : "max-h-0"
             }`}
           >
-            <div className="mt-7">
+            <div className="mt-4">
               <ul className="flex font-semibold text-[0.6875rem]">
-                <li className="mr-4">이용약관</li>
-                <li className="mr-4 font-light text-meet_gray">|</li>
-                <li className="text-meet_sodomy mr-4">개인정보처리방침</li>
-                <li className="mr-4 font-light text-meet_gray">|</li>
+                <li className="mr-2">이용약관</li>
+                <li className="mr-2 font-light text-meet_gray">|</li>
+                <li className="text-meet_sodomy mr-2">개인정보처리방침</li>
+                <li className="mr-2 font-light text-meet_gray">|</li>
                 <li>운영정책</li>
               </ul>
             </div>
-            <div className="mt-4 text-left text-[0.625rem] w-full">
+            <div className="mt-4 text-left text-[0.6875rem] w-full">
               <div>
                 <div>
                   <span className="inline-block font-medium">대표 : </span>
                   <span>황성연</span>
-                  <span className="inline-block ml-2 font-medium">사업자 등록번호 : </span>
+                  <span className="inline-block ml-2 font-medium">
+                    사업자 등록번호 :{" "}
+                  </span>
                   <span>126-86-35315</span>
                 </div>
               </div>

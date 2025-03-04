@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         meet_pink: "#FA1155",
+        meet_pink_hover: "#bf1651",
         meet_menu: "#666666",
         meet_text: "#7D8A9F",
         meet_black: "#1C1E22",

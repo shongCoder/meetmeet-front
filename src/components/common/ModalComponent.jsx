@@ -10,7 +10,7 @@ function ModalComponent() {
   const handleClose = () => {
     closeModal();
     if (redirectPath) {
-      navigate(redirectPath); // ✅ 모달 닫을 때 이동
+      navigate(redirectPath);
     }
   };
 

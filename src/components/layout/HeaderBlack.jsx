@@ -13,10 +13,10 @@ const HeaderBlack = () => {
   const openModal = useModalStore((state) => state.openModal);
 
   const handleNavClick = (event, path) => {
-    setIsOpen(false); // ✅ 메뉴 닫기
+    setIsOpen(false);
     if (!token && path === "/exchange") {
       event.preventDefault();
-      openModal("로그인이 필요합니다.", "/login"); // ✅ 로그인 안 되어 있으면 모달 띄우기 & 닫으면 로그인 페이지 이동
+      openModal("로그인이 필요합니다.", "/login");
     }
   };
 
@@ -106,7 +106,7 @@ const HeaderBlack = () => {
               : "max-h-0 opacity-0 mt-0"
           } lg:max-h-none lg:opacity-100 lg:mt-0 md:max-h-none md:opacity-100 md:mt-0`}
         >
-          <button className="lg:w-32 md:w-32 px-5 py-[0.375rem] text-meet_white bg-meet_pink rounded-3xl font-bold flex items-center justify-center whitespace-nowrap">
+          <button className="lg:w-32 md:w-32 px-5 py-[0.375rem] text-meet_white bg-meet_pink hover:bg-meet_pink_hover rounded-3xl font-bold flex items-center justify-center whitespace-nowrap">
             {token ? (
               <NavLink to="/" onClick={clearToken}>
                 로그아웃
