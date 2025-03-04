@@ -18,7 +18,7 @@ function InfluencerComponent() {
           className="w-[18.375rem] mt-5 lg:hidden md:hidden block"
         />
         <div className="flex justify-center lg:mt-[3.75rem] md:mt-[3.75rem] mt-8 relative z-10">
-          <button className="bg-meet_pink lg:px-8 md:px-8 px-6 lg:py-5 md:py-5 py-3 shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)] text-meet_white font-bold rounded-full">
+          <button className="bg-meet_pink hover:bg-meet_pink_hover lg:px-8 md:px-8 px-6 lg:py-5 md:py-5 py-3 shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)] text-meet_white font-bold rounded-full">
             인플루언서 지원하기
           </button>
         </div>
@@ -145,7 +145,7 @@ function InfluencerComponent() {
               지금 바로 밋밋을 시작하세요
             </p>
             <img src="./img/influencer/chat.png" className="w-[22rem] mt-10" />
-            <button className="bg-meet_pink text-meet_white font-bold text-[0.8125rem] rounded-[0.5rem] lg:w-[22rem] md:w-[22rem] w-full py-3 text-center mx-auto">
+            <button className="bg-meet_pink hover:bg-meet_pink_hover text-meet_white font-bold text-[0.8125rem] rounded-[0.5rem] lg:w-[22rem] md:w-[22rem] w-full py-3 text-center mx-auto">
               신청하기
             </button>
           </div>

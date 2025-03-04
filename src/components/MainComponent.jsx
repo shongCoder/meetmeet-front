@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const MainComponent = () => {
   return (
     <>
@@ -11,9 +13,11 @@ const MainComponent = () => {
             <div className="mt-4 lg:text-[1rem] md:text-5 text-[0.875rem] text-meet_gray">
               만나고 싶은 순간, 지금 바로 밋밋하세요!
             </div>
-            <button className="lg:mt-10 md:mt-10 mt-5 lg:px-8 lg:py-5 md:px-8 md:py-5 px-6 py-3 bg-meet_pink hover:bg-meet_pink_hover shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)] font-bold text-white rounded-full">
-              앱 다운로드
-            </button>
+            <NavLink to="/download">
+              <button className="lg:mt-10 md:mt-10 mt-5 lg:px-8 lg:py-5 md:px-8 md:py-5 px-6 py-3 bg-meet_pink hover:bg-meet_pink_hover shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)] font-bold text-white rounded-full">
+                앱 다운로드
+              </button>
+            </NavLink>
           </div>
         </div>
       </div>
