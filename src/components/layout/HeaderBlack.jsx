@@ -16,7 +16,11 @@ const HeaderBlack = () => {
     setIsOpen(false);
     if (!token && path === "/exchange") {
       event.preventDefault();
-      openModal("로그인이 필요합니다.", "/login");
+      openModal(
+        "로그인",
+        `접근이 불가능 합니다. \n로그인 후 이용해 주세요`,
+        "/login",
+      );
     }
   };
 
