@@ -12,7 +12,7 @@ function ExchangeComponent() {
         인플루언서 활동 수익을 환전할 수 있어요
       </div>
 
-      <div className="lg:px-[13.75rem] md:px-8 px-5 w-full lg:flex lg:gap-5 md:flex md:gap-5 flex-none">
+      <div className="lg:px-0 lg:w-[50rem] md:px-8 px-5 w-full lg:flex lg:gap-5 md:flex md:gap-5 flex-none">
         <div className="w-full border-meet_gray border p-5 flex items-center justify-between rounded-[0.75rem] shadow-[0px_12px_12px_rgba(54,49,189,0.02)] lg:mb-0 md:mb-0 mb-2">
           <span className="text-left font-medium text-meet_text text-[0.875rem] flex-1">
             보유중인 환전 가능 포인트
@@ -40,7 +40,7 @@ function ExchangeComponent() {
       </div>
 
       {/* 수익금 내역 */}
-      <div className="lg:px-[13.75rem] md:px-8 px-5 w-full mt-10">
+      <div className="lg:px-0 lg:w-[50rem] md:px-8 px-5 w-full mt-10">
         <span className="text-left text-[1.25rem] font-bold">수익금 내역</span>
         <div className="w-full bg-meet_gray h-[1px] mt-4"></div>
         {isApply ? (
@@ -70,12 +70,12 @@ function ExchangeComponent() {
               </div>
               <div className="text-meet_text text-[0.75rem] mt-4 font-light">
                 <span>#5894440</span>
-                <span className="mx-2 text-meet_gray">&#183;</span>
+                <span className="mx-2 text-[#c1c1c1]">&#183;</span>
                 <span>주문 접수일 : 25.01.19 14:04</span>
-                <span className="mx-2 text-meet_gray">&#183;</span>
+                <span className="mx-2 text-[#c1c1c1]">&#183;</span>
                 <span>100,000P</span>
               </div>
-              <div className="w-full bg-meet_gray h-[1px] mt-3"></div>
+              <div className="w-full bg-[#f1f1f1] h-[1px] mt-3"></div>
             </div>
             <div>
               <div className="w-fit mt-7 bg-meet_sodomy font-semibold text-[0.75rem] text-meet_white px-2 py-1 rounded-[0.25rem] ml-0">
@@ -92,14 +92,14 @@ function ExchangeComponent() {
                 <span className="mx-2 text-meet_gray">&#183;</span>
                 <span>6 00,000P</span>
               </div>
-              <div className="w-full bg-meet_gray h-[1px] mt-3"></div>
+              <div className="w-full bg-[#f1f1f1] h-[1px] mt-3"></div>
             </div>
           </div>
         )}
       </div>
 
       {/* 수익금 환전 안내 */}
-      <div className="lg:px-[13.75rem] md:px-8 px-5 w-full mt-20 mb-20">
+      <div className="lg:px-0 lg:w-[50rem] md:px-8 px-5 w-full mt-20 mb-20">
         <div className="bg-meet_light_gray rounded-[0.75rem] p-5">
           <div className="font-bold text-meet_sodomy">수익금 환전 안내</div>
           <div className="text-meet_text mt-2">
