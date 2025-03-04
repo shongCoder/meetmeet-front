@@ -21,7 +21,7 @@ function SupportComponent() {
             <div className="mt-4 lg:text-[1rem] md:text-5 text-[0.875rem] text-meet_gray">
               만나고 싶은 순간, 지금 바로 밋밋하세요!
             </div>
-            <button className="lg:mt-10 md:mt-10 mt-5 lg:px-8 lg:py-5 md:px-8 md:py-5 px-6 py-3 bg-meet_pink shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)] font-bold text-white rounded-full">
+            <button className="lg:mt-10 md:mt-10 mt-5 lg:px-8 lg:py-5 md:px-8 md:py-5 px-6 py-3 bg-meet_pink hover:bg-meet_pink_hover shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)] font-bold text-white rounded-full">
               앱 다운로드
             </button>
           </div>
@@ -45,7 +45,7 @@ function SupportComponent() {
       </div>
 
       {/* 이용 안내 */}
-      <div className="lg:px-[6.25rem] md:px-8 px-5 lg:mt-[18.75rem] md:mt-[18.75rem] pt-[5rem]">
+      <div className="lg:px-[6.25rem] md:px-8 px-5 lg:mt-[18.75rem] md:mt-[18.75rem] pt-[5rem] lg:mb-[6.25rem] md:mb-[6.25rem]">
         <div className="bg-meet_pink text-meet_white lg:text-[0.8125rem] md:text-[0.8125rem] text-[0.625rem] font-semibold w-fit px-4 py-[0.375rem] rounded-2xl">
           Usage Information
         </div>
@@ -77,14 +77,15 @@ function SupportComponent() {
                 onClick={() => toggleAccordion(index)}
                 className="flex items-center justify-between mt-10 cursor-pointer"
               >
-                <span className="text-left text-[1.5rem] font-semibold flex-1">
+                <span className="text-left lg:text-[1.5rem] md:text-[1.5rem] text-[1.125rem] font-semibold flex-1">
                   {item.title}
                 </span>
-                {openIndex === index ? (
-                  <img src="./img/support/minus.png" className="w-6" />
-                ) : (
-                  <img src="./img/support/add.png" className="w-6" />
-                )}
+                <img
+                  src="./img/support/add.png"
+                  className={`lg:w-6 md:w-6 w-4 transition-transform duration-300 ${
+                    openIndex === index ? "rotate-45" : "rotate-0"
+                  }`}
+                />
               </div>
 
               {/* 내용 (해당 항목이 열렸을 때만 표시) */}
@@ -93,7 +94,7 @@ function SupportComponent() {
                   openIndex === index ? "max-h-[1000px]" : "max-h-0"
                 }`}
               >
-                <p className="text-meet_text text-[1.25rem] mt-5 leading-8">
+                <p className="text-meet_text lg:text-[1.25rem] md:text-[1.25rem] text-[0.875rem] mt-5 leading-8">
                   {item.content}
                 </p>
               </div>
@@ -101,10 +102,6 @@ function SupportComponent() {
               <div className="w-full bg-meet_gray h-[1px] mt-6"></div>
             </div>
           ))}
-        </div>
-        <div className="text-meet_text text-center mt-9 lg:mb-[6.25rem] md:mb-[6.25rem]">
-          <span>더 궁금하신 내용이 있나요?</span>
-          <span className="font-medium text-meet_sodomy">문의하기</span>
         </div>
       </div>
       <div className="bg-meet_light_gray lg:pt-[12.5rem] md:pt-[12.5rem] pt-[3.75rem] lg:px-[6.25rem] md:px-8 px-5 w-full lg:mt-[6.25rem] md:mt-[6.25rem] mt-[3.75rem] lg:pb-[12.5rem] md:pb-[12.5rem] pb-[3.75rem]">
@@ -119,10 +116,10 @@ function SupportComponent() {
         </div>
         {/* 게시물 박스 */}
         <div className="mt-20 flex lg:items-center lg:justify-between gap-6 md:flex-col flex-col lg:flex-row">
-          <div className="bg-meet_white p-6 w-full rounded-[1.25rem] border border-meet_gray">
+          <div className="bg-meet_white p-6 w-full rounded-[1.25rem] border border-meet_gray hover:border-meet_pink group">
             <div className="w-full h-[13.8rem] bg-[url('/img/support/blog-1.png')] bg-cover bg-center rounded-[0.75rem]"></div>
             <div className="w-full">
-              <div className="lg:text-[1.5rem] md:text-[1.5rem] text-[1.25rem] text-ellipsis line-clamp-1 font-bold mt-5">
+              <div className="lg:text-[1.5rem] md:text-[1.5rem] text-[1.25rem] text-ellipsis line-clamp-1 font-bold mt-5 group-hover:text-meet_pink">
                 사회적 기업의 가치와 사회적 영향력
               </div>
               <p className="text-meet_text mt-3 lg:text-[1rem] md:text-[1rem] text-[0.8125rem] w-full text-ellipsis lg:line-clamp-2 md:line-clamp-2 line-clamp-3">
@@ -136,14 +133,14 @@ function SupportComponent() {
                 Lorem Ipsum passages, and more recently with desktop publishing
                 software like Aldus PageMaker including versions of Lorem Ipsum.
               </p>
-              <div className="font-normal text-meet_pink pt-3">read more</div>
+              <div className="font-normal text-meet_pink pt-3">자세히 보기</div>
             </div>
           </div>
           <div className="w-full flex flex-col gap-5 h-full">
-            <div className="w-full p-6 bg-meet_white flex lg:items-center lg:justify-between md:items-center me:justify-between lg:flex-row md:flex-row flex-col gap-[1.875rem] rounded-[1.25rem] border border-meet_gray">
+            <div className="w-full p-6 bg-meet_white flex lg:items-center md:items-center lg:flex-row md:flex-row flex-col gap-[1.875rem] rounded-[1.25rem] border border-meet_gray hover:border-meet_pink group">
               <div className="lg:w-60 md:w-60 w-full lg:h-[8.8125rem] md:h-[8.8125rem] h-[13.8rem] bg-[url('/img/support/blog-2.png')] bg-cover bg-center rounded-[0.75rem] m-0"></div>
-              <div className="lg:w-[19.25rem] md:w-[24.125rem] m-0">
-                <div className="lg:text-[1.5rem] md:text-[1.5rem] text-[1.25rem] w-full text-ellipsis line-clamp-1 font-bold">
+              <div className="flex-1 min-w-0">
+                <div className="lg:text-[1.5rem] md:text-[1.5rem] text-[1.25rem] w-full text-ellipsis line-clamp-1 font-bold group-hover:text-meet_pink">
                   자기 계발의 시작:5가지 효과적인 방법
                 </div>
                 <p className="text-meet_text mt-3 w-full text-ellipsis lg:line-clamp-2 md:line-clamp-2 line-clamp-3">
@@ -153,13 +150,15 @@ function SupportComponent() {
                   galley of type and scrambled it to make a type specimen book.
                   It has survived
                 </p>
-                <div className="font-normal text-meet_pink pt-8">read more</div>
+                <div className="font-normal text-meet_pink pt-8">
+                  자세히 보기
+                </div>
               </div>
             </div>
-            <div className="w-full p-6 bg-meet_white flex lg:items-center lg:justify-between md:items-center me:justify-between lg:flex-row md:flex-row flex-col gap-[1.875rem] rounded-[1.25rem] border border-meet_gray">
+            <div className="w-full p-6 bg-meet_white flex lg:items-center md:items-center lg:flex-row md:flex-row flex-col gap-[1.875rem] rounded-[1.25rem] border border-meet_gray hover:border-meet_pink group">
               <div className="lg:w-60 md:w-60 w-full lg:h-[8.8125rem] md:h-[8.8125rem] h-[13.8rem] bg-[url('/img/support/blog-3.png')] bg-cover bg-center rounded-[0.75rem] m-0"></div>
-              <div className="lg:w-[19.25rem] md:w-[24.125rem] m-0">
-                <div className="lg:text-[1.5rem] md:text-[1.5rem] text-[1.25rem] w-full text-ellipsis line-clamp-1 font-bold">
+              <div className="flex-1 min-w-0">
+                <div className="lg:text-[1.5rem] md:text-[1.5rem] text-[1.25rem] w-full text-ellipsis line-clamp-1 font-bold group-hover:text-meet_pink">
                   창의력을 끌어올리는 방법:아이들에게 좋은 놀이
                 </div>
                 <p className="text-meet_text mt-3 w-full text-ellipsis lg:line-clamp-2 md:line-clamp-2 line-clamp-3">
@@ -169,7 +168,9 @@ function SupportComponent() {
                   galley of type and scrambled it to make a type specimen book.
                   It has survived
                 </p>
-                <div className="font-normal text-meet_pink pt-8">read more</div>
+                <div className="font-normal text-meet_pink pt-8">
+                  자세히 보기
+                </div>
               </div>
             </div>
           </div>
@@ -214,14 +215,15 @@ function SupportComponent() {
                 onClick={() => toggleAccordion(index)}
                 className="flex items-center justify-between mt-10 cursor-pointer"
               >
-                <span className="text-left text-[1.5rem] font-semibold flex-1">
+                <span className="text-left lg:text-[1.5rem] md:text-[1.5rem] text-[1.125rem] font-semibold flex-1">
                   {item.title}
                 </span>
-                {openIndex === index ? (
-                  <img src="./img/support/minus.png" className="w-6" />
-                ) : (
-                  <img src="./img/support/add.png" className="w-6" />
-                )}
+                <img
+                  src="./img/support/add.png"
+                  className={`lg:w-6 md:w-6 w-4 transition-transform duration-300 ${
+                    openIndex === index ? "rotate-45" : "rotate-0"
+                  }`}
+                />
               </div>
 
               {/* 내용 (해당 항목이 열렸을 때만 표시) */}
@@ -230,7 +232,7 @@ function SupportComponent() {
                   openIndex === index ? "max-h-[1000px]" : "max-h-0"
                 }`}
               >
-                <p className="text-meet_text text-[1.25rem] mt-5 leading-8">
+                <p className="text-meet_text lg:text-[1.25rem] md:text-[1.25rem] text-[0.875rem] mt-5 leading-8">
                   {item.content}
                 </p>
               </div>
@@ -240,8 +242,10 @@ function SupportComponent() {
           ))}
         </div>
         <div className="text-meet_text text-center mt-9 lg:mb-[6.25rem] md:mb-[6.25rem] mb-[3.75rem]">
-          <span>더 궁금하신 내용이 있나요?</span>
-          <span className="font-medium text-meet_sodomy">문의하기</span>
+          <span>더 궁금하신 내용이 있나요? </span>
+          <span className="font-medium text-meet_sodomy">
+            <a href="-">문의하기</a>
+          </span>
         </div>
       </div>
     </>
