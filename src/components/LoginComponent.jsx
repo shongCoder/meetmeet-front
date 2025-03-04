@@ -64,7 +64,7 @@ function LoginComponent() {
               <button
                 onClick={handleLogin}
                 style={{ boxShadow: "0px 5px 10px rgba(26, 26, 26, 0.1)" }}
-                className="bg-meet_pink rounded-[0.75rem] w-full text-center py-4 text-meet_white font-bold lg:mt-[4.25rem] md:mt-[4.25rem] mt-11"
+                className="bg-meet_pink hover:bg-meet_pink_hover rounded-[0.75rem] w-full text-center py-4 text-meet_white font-bold lg:mt-[4.25rem] md:mt-[4.25rem] mt-11"
               >
                 로그인
               </button>
