@@ -70,9 +70,9 @@ function ExchangeComponent() {
               </div>
               <div className="text-meet_text text-[0.75rem] mt-4 font-light">
                 <span>#5894440</span>
-                <span className="mx-3">&#183;</span>
+                <span className="mx-2 text-meet_gray">&#183;</span>
                 <span>주문 접수일 : 25.01.19 14:04</span>
-                <span className="mx-3">&#183;</span>
+                <span className="mx-2 text-meet_gray">&#183;</span>
                 <span>100,000P</span>
               </div>
               <div className="w-full bg-meet_gray h-[1px] mt-3"></div>
@@ -87,9 +87,9 @@ function ExchangeComponent() {
               </div>
               <div className="text-meet_text text-[0.75rem] mt-4 font-light">
                 <span>#5876927</span>
-                <span className="mx-3">&#183;</span>
+                <span className="mx-2 text-meet_gray">&#183;</span>
                 <span>주문 접수일 : 25.01.14 09:54</span>
-                <span className="mx-3">&#183;</span>
+                <span className="mx-2 text-meet_gray">&#183;</span>
                 <span>6 00,000P</span>
               </div>
               <div className="w-full bg-meet_gray h-[1px] mt-3"></div>

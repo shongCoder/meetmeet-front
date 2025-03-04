@@ -112,7 +112,7 @@ function InfluencerComponent() {
                 #투잡하고 싶은분
               </p>
 
-              <p className="text-meet_text text-[0.8125rem] mt-2">
+              <p className="text-meet_text text-[0.8125rem] tracking-tight mt-2">
                 #사교적이고 쾌활한 성격 #공감력과 배려심많은분
                 <br />
                 #우울한분 #심심한분 #능력있는 남성을 친구로
