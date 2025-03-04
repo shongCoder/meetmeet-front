@@ -58,6 +58,12 @@
 body {
   font-family: "Pretendard", sans-serif !important;
   font-weight: 400;
+  -webkit-touch-callout: none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+
 }
 
 ul,

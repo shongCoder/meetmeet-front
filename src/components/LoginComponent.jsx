@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/outline";
+import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/solid";
 import useAuthStore from "../store/authStore.js";
 import { NavLink } from "react-router-dom";
 
@@ -54,9 +54,9 @@ function LoginComponent() {
                 className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-gray-700"
               >
                 {showPassword ? (
-                  <EyeSlashIcon className="w-6 h-6 translate-y-1 text-meet_gray" />
-                ) : (
                   <EyeIcon className="w-6 h-6 translate-y-1 text-meet_gray" />
+                ) : (
+                  <EyeSlashIcon className="w-6 h-6 translate-y-1 text-meet_gray" />
                 )}
               </button>
             </div>
