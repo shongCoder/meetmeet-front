@@ -11,7 +11,7 @@ const MainComponent = () => {
             <div className="mt-4 lg:text-[1rem] md:text-5 text-[0.875rem] text-meet_gray">
               만나고 싶은 순간, 지금 바로 밋밋하세요!
             </div>
-            <button className="lg:mt-10 md:mt-10 mt-5 lg:px-8 lg:py-5 md:px-8 md:py-5 px-6 py-3 bg-meet_pink shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)] font-bold text-white rounded-full">
+            <button className="lg:mt-10 md:mt-10 mt-5 lg:px-8 lg:py-5 md:px-8 md:py-5 px-6 py-3 bg-meet_pink hover:bg-[#bf1651] shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)] font-bold text-white rounded-full">
               앱 다운로드
             </button>
           </div>
@@ -26,7 +26,7 @@ const MainComponent = () => {
         <div className="text-meet_black text-center font-bold lg:text-[3.25rem] md:text-[3.25rem] text-[1.75rem]">
           실시간 영상통화
         </div>
-        <div className="text-meet_text lg:text-[1.25rem] md:text-[1.25rem] text-[0.875rem] mt-4 mb-8 pl-3 lg:w-[26rem] md:w-[24rem] w-[12.875rem]">
+        <div className="text-center text-meet_text lg:text-[1.25rem] md:text-[1.25rem] text-[0.875rem] mt-4 mb-8 pl-3 lg:w-[26rem] md:w-[24rem] w-[12.875rem]">
           지금 바로 연결하세요, 실시간으로 이루어지는 생생한 영상통화로 진짜
           소통을 경험해보세요.
         </div>
@@ -44,10 +44,10 @@ const MainComponent = () => {
         <div className="w-36">
           <img src="./img/main/mugs.png" />
         </div>
-        <div className="text-meet_black text-center font-bold lg:text-[3.25rem] md:text-[3.25rem] text-[1.75rem]">
+        <div className="text-meet_white text-center font-bold lg:text-[3.25rem] md:text-[3.25rem] text-[1.75rem]">
           일상 공유
         </div>
-        <div className="text-meet_text lg:text-[1.25rem] md:text-[1.25rem] text-[0.875rem] mt-4 mb-8 pl-3 lg:w-[26rem] md:w-[24rem] w-[12.875rem]">
+        <div className="text-meet_white text-center font-light lg:text-[1.25rem] md:text-[1.25rem] text-[0.875rem] mt-4 mb-8 pl-3 lg:w-[26rem] md:w-[24rem] w-[12.875rem]">
           당신의 특별한 순간들을 나눠보세요. 소소한 일상이 모두와 함께하는
           이야기가 됩니다.
         </div>
@@ -68,7 +68,7 @@ const MainComponent = () => {
         <div className="text-meet_black text-center font-bold lg:text-[3.25rem] md:text-[3.25rem] text-[1.75rem]">
           채팅
         </div>
-        <div className="text-meet_text lg:text-[1.25rem] md:text-[1.25rem] text-[0.875rem] mt-4 mb-8 pl-3 lg:w-[26rem] md:w-[24rem] w-[12.875rem]">
+        <div className="text-meet_text text-center lg:text-[1.25rem] md:text-[1.25rem] text-[0.875rem] mt-4 mb-8 pl-3 lg:w-[26rem] md:w-[24rem] w-[12.875rem]">
           지금 바로 연결하세요, 실시간으로 이루어지는 생생한 영상통화로 진짜
           소통을 경험해보세요.
         </div>
@@ -89,7 +89,7 @@ const MainComponent = () => {
         <div className="text-meet_black text-center font-bold lg:text-[3.25rem] md:text-[3.25rem] text-[1.75rem]">
           나만의 멤버십 서비스
         </div>
-        <div className="text-meet_text lg:text-[1.25rem] md:text-[1.25rem] text-[0.875rem] mt-4 mb-8 pl-3 lg:w-[26rem] md:w-[30rem] w-[12.875rem]">
+        <div className="text-meet_text text-center lg:text-[1.25rem] md:text-[1.25rem] text-[0.875rem] mt-4 mb-8 pl-3 lg:w-[26rem] md:w-[30rem] w-[12.875rem]">
           당신만의 특별한 상품과 경험을 만들어보세요. 원하는 것을 구독형
           멤버십으로 제공하며, 당신의 가치를 공유하세요.
         </div>
