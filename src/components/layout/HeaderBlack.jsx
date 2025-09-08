@@ -77,17 +77,17 @@ const HeaderBlack = () => {
                 밋밋셀럽
               </NavLink>
             </li>
-            <li>
-              <NavLink
-                to="/exchange"
-                onClick={(e) => handleNavClick(e, "/exchange")}
-                className={({ isActive }) =>
-                  isActive ? "font-bold text-meet_pink" : ""
-                }
-              >
-                포인트 환전
-              </NavLink>
-            </li>
+            {/*<li>*/}
+            {/*  <NavLink*/}
+            {/*    to="/exchange"*/}
+            {/*    onClick={(e) => handleNavClick(e, "/exchange")}*/}
+            {/*    className={({ isActive }) =>*/}
+            {/*      isActive ? "font-bold text-meet_pink" : ""*/}
+            {/*    }*/}
+            {/*  >*/}
+            {/*    포인트 환전*/}
+            {/*  </NavLink>*/}
+            {/*</li>*/}
             <li>
               <NavLink
                 onClick={() => setIsOpen(!isOpen)}
