@@ -110,14 +110,19 @@ const HeaderBlack = () => {
               : "max-h-0 opacity-0 mt-0"
           } lg:max-h-none lg:opacity-100 lg:mt-0 md:max-h-none md:opacity-100 md:mt-0`}
         >
-          <button className="lg:w-32 md:w-32 px-5 py-[0.375rem] text-meet_white bg-meet_pink hover:bg-meet_pink_hover rounded-3xl font-bold flex items-center justify-center whitespace-nowrap">
-            {token ? (
-              <NavLink to="/" onClick={clearToken}>
-                로그아웃
-              </NavLink>
-            ) : (
-              <NavLink to="/login">로그인</NavLink>
-            )}
+          {/*<button className="lg:w-32 md:w-32 px-5 py-[0.375rem] text-meet_white bg-meet_pink hover:bg-meet_pink_hover rounded-3xl font-bold flex items-center justify-center whitespace-nowrap">*/}
+          {/*  {token ? (*/}
+          {/*    <NavLink to="/" onClick={clearToken}>*/}
+          {/*      로그아웃*/}
+          {/*    </NavLink>*/}
+          {/*  ) : (*/}
+          {/*    <NavLink to="/login">로그인</NavLink>*/}
+          {/*  )}*/}
+          {/*</button>*/}
+          <button className="lg:w-36 md:w-36 px-5 py-[0.375rem] text-meet_white bg-meet_pink hover:bg-meet_pink_hover rounded-3xl font-bold flex items-center justify-center whitespace-nowrap">
+            <NavLink to="/download">
+              앱 다운로드
+            </NavLink>
           </button>
         </div>
       </div>
