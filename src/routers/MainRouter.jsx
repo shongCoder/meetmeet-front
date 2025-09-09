@@ -10,6 +10,7 @@ const Support = lazy(() => import("../pages/SupportPage.jsx"));
 const Exchange = lazy(() => import("../pages/ExchangePage.jsx"));
 const Download = lazy(() => import("../pages/DownloadPage.jsx"));
 const Influencer = lazy(() => import("../pages/InfluencerPage.jsx"));
+const Notice = lazy(() => import("../pages/NoticePage.jsx"));
 
 const Loading = <LoadingComponent />;
 
@@ -74,6 +75,14 @@ const mainRouter = createHashRouter([
                     </Suspense>
                 ),
             },
+            {
+                path: "/notice-detail",
+                element: (
+                    <Suspense fallback={Loading}>
+                        <Notice />
+                    </Suspense>
+                )
+            }
 
         ],
     },

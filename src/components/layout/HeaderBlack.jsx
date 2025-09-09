@@ -119,7 +119,7 @@ const HeaderBlack = () => {
           {/*    <NavLink to="/login">로그인</NavLink>*/}
           {/*  )}*/}
           {/*</button>*/}
-          <button className="lg:w-36 md:w-36 px-5 py-[0.375rem] text-meet_white bg-meet_pink hover:bg-meet_pink_hover rounded-3xl font-bold flex items-center justify-center whitespace-nowrap">
+          <button className="lg:w-40 md:w-40 px-5 py-[0.375rem] text-meet_white bg-meet_pink hover:bg-meet_pink_hover rounded-3xl font-bold flex items-center justify-center whitespace-nowrap">
             <NavLink to="/download">
               앱 다운로드
             </NavLink>

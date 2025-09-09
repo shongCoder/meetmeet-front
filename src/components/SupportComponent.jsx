@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 
 function SupportComponent() {
   // 각 항목의 상태를 개별적으로 관리하는 배열
@@ -119,7 +119,8 @@ function SupportComponent() {
         </div>
         {/* 게시물 박스 */}
         <div className="mt-20 flex lg:items-center lg:justify-between gap-6 md:flex-col flex-col lg:flex-row">
-          <div className="bg-meet_white p-6 w-full rounded-[1.25rem] border border-meet_gray hover:border-meet_pink group">
+          {/* 1 */}
+          <Link to="/notice-detail" state={{ noticeId: 1 }} className="bg-meet_white p-6 w-full rounded-[1.25rem] border border-meet_gray hover:border-meet_pink group">
             <div className="w-full h-[13.8rem] bg-[url('/img/support/blog-1.png')] bg-cover bg-center rounded-[0.75rem]"></div>
             <div className="w-full">
               <div className="lg:text-[1.5rem] md:text-[1.5rem] text-[1.25rem] text-ellipsis line-clamp-1 font-bold mt-5 group-hover:text-meet_pink">
@@ -138,9 +139,10 @@ function SupportComponent() {
               </p>
               <div className="font-normal text-meet_pink pt-3">자세히 보기</div>
             </div>
-          </div>
+          </Link>
           <div className="w-full flex flex-col gap-5 h-full">
-            <div className="w-full p-6 bg-meet_white flex lg:items-center md:items-center lg:flex-row md:flex-row flex-col gap-[1.875rem] rounded-[1.25rem] border border-meet_gray hover:border-meet_pink group">
+            {/* 2 */}
+            <Link to="/notice-detail" state={{ noticeId: 2 }} className="w-full p-6 bg-meet_white flex lg:items-center md:items-center lg:flex-row md:flex-row flex-col gap-[1.875rem] rounded-[1.25rem] border border-meet_gray hover:border-meet_pink group">
               <div className="lg:w-60 md:w-60 w-full lg:h-[8.8125rem] md:h-[8.8125rem] h-[13.8rem] bg-[url('/img/support/blog-2.png')] bg-cover bg-center rounded-[0.75rem] m-0"></div>
               <div className="flex-1 min-w-0">
                 <div className="lg:text-[1.5rem] md:text-[1.5rem] text-[1.25rem] w-full text-ellipsis line-clamp-1 font-bold group-hover:text-meet_pink">
@@ -157,8 +159,9 @@ function SupportComponent() {
                   자세히 보기
                 </div>
               </div>
-            </div>
-            <div className="w-full p-6 bg-meet_white flex lg:items-center md:items-center lg:flex-row md:flex-row flex-col gap-[1.875rem] rounded-[1.25rem] border border-meet_gray hover:border-meet_pink group">
+            </Link>
+            {/* 3 */}
+            <Link to="/notice-detail" state={{ noticeId: 3 }} className="w-full p-6 bg-meet_white flex lg:items-center md:items-center lg:flex-row md:flex-row flex-col gap-[1.875rem] rounded-[1.25rem] border border-meet_gray hover:border-meet_pink group">
               <div className="lg:w-60 md:w-60 w-full lg:h-[8.8125rem] md:h-[8.8125rem] h-[13.8rem] bg-[url('/img/support/blog-3.png')] bg-cover bg-center rounded-[0.75rem] m-0"></div>
               <div className="flex-1 min-w-0">
                 <div className="lg:text-[1.5rem] md:text-[1.5rem] text-[1.25rem] w-full text-ellipsis line-clamp-1 font-bold group-hover:text-meet_pink">
@@ -175,7 +178,7 @@ function SupportComponent() {
                   자세히 보기
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </div>
