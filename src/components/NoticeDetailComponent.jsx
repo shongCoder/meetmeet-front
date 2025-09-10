@@ -29,7 +29,7 @@ function NoticeDetailComponent() {
                 <div className="font-light lg:text-[0.8125rem] text-[0.875rem] text-[#7D8A9F]">{data.create_date}</div>
             </div>
             <div className="lg:px-[13.75rem] w-full">
-                <div className="w-full h-[30rem] bg-no-repeat bg-cover rounded-[20px] mb-10"
+                <div className="w-full lg:h-[30rem] md:h-[30rem] h-[15rem] bg-no-repeat bg-cover bg-center rounded-[20px] mb-10"
                      style={{ backgroundImage: `url(./img/support/${data.file_name})` }}></div>
                 <div className="notice-contents py-10">
                     <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(data.contents) }} />
