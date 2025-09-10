@@ -1,5 +1,5 @@
 
-import {NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import {useState} from "react";
 
 const Footer = () => {
@@ -24,11 +24,14 @@ const Footer = () => {
             </ul>
             <div className="flex justify-between w-full">
               <ul className="flex flex-1 font-semibold text-[0.875rem]">
-                <li className="mr-4">이용약관</li>
+                <li className="mr-4">
+                  <Link to="/terms">이용약관</Link></li>
                 <li className="mr-4 font-light text-meet_gray">|</li>
-                <li className="text-meet_sodomy mr-4">개인정보처리방침</li>
+                <li className="text-meet_sodomy mr-4">
+                  <Link to="/privacy">개인정보처리방침</Link></li>
                 <li className="mr-4 font-light text-meet_gray">|</li>
-                <li>운영정책</li>
+                <li>
+                  <Link to="/operating">운영정책</Link></li>
               </ul>
             </div>
             <div className="mt-4 text-left text-[0.8125rem] flex w-full justify-between items-end">
@@ -101,11 +104,14 @@ const Footer = () => {
             <div className="lg:hidden md:block hidden">
               <div className="mt-7">
                 <ul className="flex font-semibold text-[0.875rem]">
-                  <li className="mr-4">이용약관</li>
+                  <li className="mr-4">
+                    <Link to="/terms">이용약관</Link></li>
                   <li className="mr-4 font-light text-meet_gray">|</li>
-                  <li className="text-meet_sodomy mr-4">개인정보처리방침</li>
+                  <li className="text-meet_sodomy mr-4">
+                    <Link to="/privacy">개인정보처리방침</Link></li>
                   <li className="mr-4 font-light text-meet_gray">|</li>
-                  <li>운영정책</li>
+                  <li>
+                    <Link to="/operating">운영정책</Link></li>
                 </ul>
               </div>
               <div className="mt-4 text-left text-[0.8125rem] flex w-full justify-between items-end">
@@ -179,11 +185,17 @@ const Footer = () => {
             >
               <div className="mt-4">
                 <ul className="flex font-semibold text-[0.6875rem]">
-                  <li className="mr-2">이용약관</li>
+                  <li className="mr-2">
+                    <Link to="/terms">이용약관</Link>
+                  </li>
                   <li className="mr-2 font-light text-meet_gray">|</li>
-                  <li className="text-meet_sodomy mr-2">개인정보처리방침</li>
+                  <li className="text-meet_sodomy mr-2">
+                    <Link to="/privacy">개인정보처리방침</Link>
+                  </li>
                   <li className="mr-2 font-light text-meet_gray">|</li>
-                  <li>운영정책</li>
+                  <li>
+                    <Link to="/operating">운영정책</Link>
+                  </li>
                 </ul>
               </div>
               <div className="mt-4 text-left text-[0.6875rem] w-full">
