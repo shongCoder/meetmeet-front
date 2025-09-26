@@ -87,7 +87,43 @@ li {
   margin-bottom: 1rem;
 }
 
+/* Swiper pagination bullets */
+.swiper-vertical > .swiper-pagination-bullets, .swiper-pagination-vertical.swiper-pagination-bullets {
+  right: 6.25rem !important;         /* 우측에 붙이기 */
+  top: 50% !important;            /* 가운데 정렬 */
+  transform: translateY(-50%) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.12%);
+  opacity: 1;
+  transition: all 0.3s ease;
+  margin: 0 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ff165d !important; /* 활성화 빨강/핑크 */
+  border-radius: 6px !important;  /* 살짝 캡슐 느낌 */
+  height: 24px !important;        /* 강조 */
+}
+
+@media (max-width: 1440px) {
+  .swiper-vertical > .swiper-pagination-bullets, .swiper-pagination-vertical.swiper-pagination-bullets {
+    right: 2rem !important;         /* 우측에 붙이기 */
+  }
+}
+
 @media (max-width: 640px) {
+  .swiper-vertical > .swiper-pagination-bullets, .swiper-pagination-vertical.swiper-pagination-bullets {
+    right: 1.25rem !important;         /* 우측에 붙이기 */
+  }
+
   .notice-content h1 {
     font-size: 1.5rem;
   }
