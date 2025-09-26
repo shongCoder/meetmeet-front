@@ -87,6 +87,11 @@ li {
   margin-bottom: 1rem;
 }
 
+.notice-contents a {
+  color: #7D8A9F !important;
+  text-decoration: underline !important;
+}
+
 /* Swiper pagination bullets */
 .swiper-vertical > .swiper-pagination-bullets, .swiper-pagination-vertical.swiper-pagination-bullets {
   right: 6.25rem !important;         /* 우측에 붙이기 */
@@ -130,7 +135,6 @@ li {
   .notice-contents p {
     font-size: 1rem;
   }
-
   .notice-contents h2 {
     font-size: 1.125rem;
   }

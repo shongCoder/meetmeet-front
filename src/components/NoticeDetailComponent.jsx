@@ -33,7 +33,6 @@ function NoticeDetailComponent() {
                      style={{ backgroundImage: `url(./img/support/${data.file_name})` }}></div>
                 <div className="notice-contents py-10">
                     <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(data.contents) }} />
-                    <div className="text-[#7D8A9F] text-[0.8125rem] font-light">PUBLISHED: {data.create_date}</div>
                 </div>
                 <div className="w-full h-[1px] bg-[#F1F1F1]"></div>
             </div>

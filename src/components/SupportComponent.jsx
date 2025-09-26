@@ -61,17 +61,52 @@ function SupportComponent() {
             {
               title: "서비스 소개",
               content:
-                "밋밋 MeetMeet 서비스는 단순한 플랫폼을 넘어, 사람과 사람을 연결하고 당신의 일상에 특별함을 더하는 공간힙니다. 다양한 기능을 통해 새로운 경험을 제안합니다.",
+                "밋밋은 1:1 영상통화 기반의 소셜 플랫폼으로, 남녀 간의 실시간 소통을 통해 즐겁고 진정성 있는 만남을 이어갈 수 있도록 설계된 서비스입니다.<br />사용자는 셀럽(여성)과 실시간 영상 대화를 나누거나, 피드와 스토어를 통해 콘텐츠를 즐기고 참여할 수 있습니다.",
             },
             {
               title: "기능 소개",
               content:
-                "밋밋 MeetMeet 서비스는 단순한 플랫폼을 넘어, 사람과 사람을 연결하고 당신의 일상에 특별함을 더하는 공간힙니다. 다양한 기능을 통해 새로운 경험을 제안합니다.",
+                "밋밋은 다음과 같은 다양한 기능을 제공합니다:<br /><br /><b>- 1:1 영상통화:</b> 실시간으로 연결되는 고품질 영상통화<br /><b>- 채팅:</b> 원하는 상대와의 자유로운 채팅 기능<br /><b>- 피드:</b> 일상이나 게시물을 확인하고 좋아요/댓글 참여<br /><b>- 팔로우/팔로잉:</b> 좋아하는 이성을 팔로우하고 특별한 일상도 만나보세요<br /><b>- 선물:</b> 포인트로 선물도 가능<br /><b>- 스토어:</b> 셀럽의 영상, 사진 등 디지털 콘텐츠 구매 가능",
             },
             {
               title: "회원가입 및 로그인",
               content:
-                "밋밋 MeetMeet 서비스는 단순한 플랫폼을 넘어, 사람과 사람을 연결하고 당신의 일상에 특별함을 더하는 공간힙니다. 다양한 기능을 통해 새로운 경험을 제안합니다.",
+                "밋밋 회원가입은 휴대폰 인증을 기반으로 빠르게 가입이 가능합니다.<br />가입 후에는 구글/애플/카카오톡 계정으로 로그인할 수 있으며, 본인 인증을 완료해야 이용이 가능합니다.(예: 영상통화, 구매 등)<br />로그인 문제가 있는 경우 고객센터를 통해 도움을 받으실 수 있습니다.",
+            },
+            {
+              title: "포인트 및 결제 안내",
+              content:
+                  "밋밋은 포인트를 통해 서비스를 이용합니다.<br /><br /><b>- 포인트 충전:</b> 구글인앱 결제서비스, 웹하드 결제서비스 지원<br /><b>- 결제 오류/실패:</b> 오류 발생 시 결제내역을 캡처하여 고객센터로 문의<br /><b>- 환불 정책:</b> 사용하지 않은 포인트에 한해 환불 요청 가능 구글 자체환불 (일부 상품 제외)",
+            },
+            {
+              title: "영상통화 및 채팅 사용법",
+              content:
+                  "밋밋에서는 실시간 영상통화와 채팅 기능을 통해 다양한 사용자와 소통할 수 있습니다.<br /><br /><b>- 영상통화 시작:</b> 사용자 프로필에서 영상통화 요청 가능, 수락 시 자동 연결 (포인트 필요)<br /><b>- 채팅 기능:</b> 텍스트와 사진 전송 가능<br /><b>- 차단 및 신고:</b> 불쾌한 행동이나 비매너 사용자는 즉시 차단/신고 가능",
+            },
+            {
+              title: "팔로우 등급 가이드",
+              content:
+                  "밋밋에서는 남성 사용자가 여성을 팔로우할 수 있으며, 여성은 각 팔로워에게 등급을 부여할 수 있습니다.<br /><br />- 남성 사용자가 여성을 팔로우하면, 여성은 각 팔로워에게 등급을 부여할 수 있어요.<br />- 등급은 총 5단계입니다: <b>일반인 > 팬 > 애정러 > 찐팬 > VIP최애</b><br />- 여성이 피드 업로드 시 등급별로 공개 범위를 설정할 수 있어 (예: 팬 이상 공개, VIP최애 전용 콘텐츠 등)<br />- 남성은 등급이 높을수록 더 다양한 피드 콘텐츠를 열람할 수 있습니다.",
+            },
+            {
+              title: "밋밋 셀럽신청 가이드",
+              content:
+                  "밋밋에서는 본인 인증을 완료한 사용자라면 누구나 셀럽 신청을 할 수 있으며,<br />관리자 승인 후 공식 셀럽으로 활동할 수 있습니다.<br /><br />- 셀럽 신청은 밋밋 앱 내 설정 > 셀럽신청 메뉴에서 가능합니다.<br />- 신청 시 본인 확인을 위한 신분증 또는 관련 서류 첨부가 필요합니다.<br />- 관리자의 승인 절차를 거쳐야 셀럽으로 활동할 수 있어요.<br />- 밋밋 셀럽이 되면 일반 사용자보다 더 다양한 기능과 혜택이 제공됩니다.<br />&nbsp;&nbsp;(예: 수익 정산, 콘텐츠 판매, 피드 업로드, 팔로워 관리 등)<br />- 부적절한 프로필이나 허위정보 등록 시 신청이 반려될 수 있습니다.<br /><br />※ 셀럽 활동 중에도 운영정책을 위반할 경우 활동이 제한될 수 있으니 유의해주세요.",
+            },
+            {
+              title: "자주 묻는 질문 (FAQ)",
+              content:
+                  "아래는 자주 접수되는 문의 내용입니다:<br /><br /><b>- 로그인이 안 돼요:</b> 계정 인증/비밀번호 확인 후 재시도<br /><b>- 포인트가 사라졌어요:</b> 사용 내역 확인 후 이의제기 가능<br /><b>- 영상이 끊겨요:</b> Wi-Fi/LTE 연결 상태 확인<br /><b>- 환불은 어떻게 하나요?:</b> 구글, 애플 홈페이지 \"구매 내역\" 탭을 통해 신청하실 수 있습니다.",
+            },
+            {
+              title: "이용제한 및 신고정책",
+              content:
+                  "밋밋은 사용자 보호를 위해 다음과 같은 신고 및 제재 정책을 운영합니다.<br /><br /><b>- 이용 제한 사유:</b> 비매너 발언, 불법 홍보, 조건만남 유도 등<br /><b>- 신고 접수:</b> 프로필/채팅/영상 내 신고 버튼 사용<br /><b>- 처리 방식:</b> 내부 검토 후 경고, 일시정지, 영구정지 등 단계별 조치<br /><b>- 허위 신고 주의:</b> 악의적 허위신고는 이용 제한 대상이 될 수 있습니다",
+            },
+            {
+              title: "계정/보안 관련",
+              content:
+                  "고객님의 정보 보호를 위해 다음과 같은 보안 기능을 제공합니다.<br /><br /><b>- 계정 탈퇴:</b> 설정 > MY설정 > 탈퇴 이용<br /><b>- 보안 유의사항:</b> 타인에게 계정 정보 노출 주의<br /><b>- 정보 유출 대응:</b> 의심되는 경우 즉시 고객센터에 신고",
             },
           ].map((item, index) => (
             <div key={index}>
@@ -97,9 +132,7 @@ function SupportComponent() {
                   openIndex === index ? "max-h-[1000px]" : "max-h-0"
                 }`}
               >
-                <p className="text-meet_text lg:text-[1.25rem] md:text-[1.25rem] text-[0.875rem] mt-5 leading-8">
-                  {item.content}
-                </p>
+                <p className="text-meet_text lg:text-[1.25rem] md:text-[1.25rem] text-[0.875rem] mt-5 leading-8" dangerouslySetInnerHTML={{ __html: item.content }} />
               </div>
 
               <div className="w-full bg-meet_gray h-[1px] mt-6"></div>
@@ -120,59 +153,67 @@ function SupportComponent() {
         {/* 게시물 박스 */}
         <div className="mt-20 flex lg:items-center lg:justify-between gap-6 md:flex-col flex-col lg:flex-row">
           {/* 1 */}
-          <Link to="/notice-detail" state={{ noticeId: 1 }} className="bg-meet_white p-6 w-full rounded-[1.25rem] border border-meet_gray hover:border-meet_pink group">
-            <div className="w-full h-[13.8rem] bg-[url('/img/support/blog-1.png')] bg-cover bg-center rounded-[0.75rem]"></div>
-            <div className="w-full">
-              <div className="lg:text-[1.5rem] md:text-[1.5rem] text-[1.25rem] text-ellipsis line-clamp-1 font-bold mt-5 group-hover:text-meet_pink">
-                사회적 기업의 가치와 사회적 영향력
-              </div>
-              <p className="text-meet_text mt-3 lg:text-[1rem] md:text-[1rem] text-[0.8125rem] w-full text-ellipsis lg:line-clamp-2 md:line-clamp-2 line-clamp-3">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the standard dummy text ever
-                since the 1500s, when an unknown printer took a galley of type
-                and scrambled it to make a type specimen book. It has survived
-                not only five centuries, but also the leap into electronic
-                typesetting, remaining essentially unchanged. It was popularised
-                in the 1960s with the release of Letraset sheets containing
-                Lorem Ipsum passages, and more recently with desktop publishing
-                software like Aldus PageMaker including versions of Lorem Ipsum.
-              </p>
-              <div className="font-normal text-meet_pink pt-3">자세히 보기</div>
-            </div>
-          </Link>
           <div className="w-full flex flex-col gap-5 h-full">
-            {/* 2 */}
-            <Link to="/notice-detail" state={{ noticeId: 2 }} className="w-full p-6 bg-meet_white flex lg:items-center md:items-center lg:flex-row md:flex-row flex-col gap-[1.875rem] rounded-[1.25rem] border border-meet_gray hover:border-meet_pink group">
-              <div className="lg:w-60 md:w-60 w-full lg:h-[8.8125rem] md:h-[8.8125rem] h-[13.8rem] bg-[url('/img/support/blog-2.png')] bg-cover bg-center rounded-[0.75rem] m-0"></div>
+            <Link to="/notice-detail" state={{ noticeId: 1 }} className="w-full p-6 bg-meet_white flex lg:items-center md:items-center lg:flex-row md:flex-row flex-col gap-[1.875rem] rounded-[1.25rem] border border-meet_gray hover:border-meet_pink group">
+              <div className="lg:w-60 md:w-60 w-full lg:h-[8.8125rem] md:h-[8.8125rem] h-[13.8rem] bg-[url('/img/support/blog-1.png')] bg-cover bg-center rounded-[0.75rem] m-0"></div>
               <div className="flex-1 min-w-0">
                 <div className="lg:text-[1.5rem] md:text-[1.5rem] text-[1.25rem] w-full text-ellipsis line-clamp-1 font-bold group-hover:text-meet_pink">
-                  자기 계발의 시작:5가지 효과적인 방법
+                  [중요] 영상통화 녹화 방지 및 보안정책 안내
                 </div>
                 <p className="text-meet_text mt-3 w-full text-ellipsis lg:line-clamp-2 md:line-clamp-2 line-clamp-3">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the standard dummy
-                  text ever since the 1500s, when an unknown printer took a
-                  galley of type and scrambled it to make a type specimen book.
-                  It has survived
+                  밋밋은 영상통화 중 화면 녹화 방지 및 불법 유출 방지를 위해
+                  회원 고유 ID 워터마크, 통화 중 실시간 모니터링 등의 보안 조치를 적용하고 있습니다.
+                  상대방의 동의 없이 녹화하거나 유출하는 행위는 법적 책임이 따를 수 있으니 주의 부탁드립니다.
                 </p>
                 <div className="font-normal text-meet_pink pt-8">
                   자세히 보기
                 </div>
               </div>
             </Link>
+            {/* 2 */}
+            <Link to="/notice-detail" state={{ noticeId: 2 }} className="w-full p-6 bg-meet_white flex lg:items-center md:items-center lg:flex-row md:flex-row flex-col gap-[1.875rem] rounded-[1.25rem] border border-meet_gray hover:border-meet_pink group">
+              <div className="lg:w-60 md:w-60 w-full lg:h-[8.8125rem] md:h-[8.8125rem] h-[13.8rem] bg-[url('/img/support/blog-2.png')] bg-cover bg-center rounded-[0.75rem] m-0"></div>
+              <div className="flex-1 min-w-0">
+                <div className="lg:text-[1.5rem] md:text-[1.5rem] text-[1.25rem] w-full text-ellipsis line-clamp-1 font-bold group-hover:text-meet_pink">
+                  사용자 프로필 심사 기준 안내
+                </div>
+                <p className="text-meet_text mt-3 w-full text-ellipsis lg:line-clamp-2 md:line-clamp-2 line-clamp-3">
+                  밋은 모든 회원이 안전하고 건강한 환경에서 서비스를 이용할 수 있도록 사용자 프로필에 대한 심사기준을 운영하고 있습니다.
+                </p>
+                <div className="font-normal text-meet_pink pt-8">
+                  자세히 보기
+                </div>
+              </div>
+            </Link>
+          </div>
+
+          <div className="w-full flex flex-col gap-5 h-full">
             {/* 3 */}
             <Link to="/notice-detail" state={{ noticeId: 3 }} className="w-full p-6 bg-meet_white flex lg:items-center md:items-center lg:flex-row md:flex-row flex-col gap-[1.875rem] rounded-[1.25rem] border border-meet_gray hover:border-meet_pink group">
               <div className="lg:w-60 md:w-60 w-full lg:h-[8.8125rem] md:h-[8.8125rem] h-[13.8rem] bg-[url('/img/support/blog-3.png')] bg-cover bg-center rounded-[0.75rem] m-0"></div>
               <div className="flex-1 min-w-0">
                 <div className="lg:text-[1.5rem] md:text-[1.5rem] text-[1.25rem] w-full text-ellipsis line-clamp-1 font-bold group-hover:text-meet_pink">
-                  창의력을 끌어올리는 방법:아이들에게 좋은 놀이
+                  서비스 운영 정책 및 커뮤니티 가이드라인 안내
                 </div>
                 <p className="text-meet_text mt-3 w-full text-ellipsis lg:line-clamp-2 md:line-clamp-2 line-clamp-3">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the standard dummy
-                  text ever since the 1500s, when an unknown printer took a
-                  galley of type and scrambled it to make a type specimen book.
-                  It has survived
+                  밋밋은 모든 사용자가 안전하게 소통할 수 있는 공간을 지향합니다.
+                  허위 프로필, 조건만남 유도, 외부 유도(텔레그램/오픈채팅 등) 등 운영 방침에 위배되는 활동은 즉시 제재될 수 있습니다.
+                  커뮤니티 가이드라인을 꼭 확인해 주세요.
+                </p>
+                <div className="font-normal text-meet_pink pt-8">
+                  자세히 보기
+                </div>
+              </div>
+            </Link>
+            {/* 4 */}
+            <Link to="/notice-detail" state={{ noticeId: 4  }} className="w-full p-6 bg-meet_white flex lg:items-center md:items-center lg:flex-row md:flex-row flex-col gap-[1.875rem] rounded-[1.25rem] border border-meet_gray hover:border-meet_pink group">
+              <div className="lg:w-60 md:w-60 w-full lg:h-[8.8125rem] md:h-[8.8125rem] h-[13.8rem] bg-[url('/img/support/blog-4.png')] bg-cover bg-center rounded-[0.75rem] m-0"></div>
+              <div className="flex-1 min-w-0">
+                <div className="lg:text-[1.5rem] md:text-[1.5rem] text-[1.25rem] w-full text-ellipsis line-clamp-1 font-bold group-hover:text-meet_pink">
+                  밋밋 공식 채널 오픈 안내 (SNS/블로그 등)
+                </div>
+                <p className="text-meet_text mt-3 w-full text-ellipsis lg:line-clamp-2 md:line-clamp-2 line-clamp-3">
+                  밋밋의 다양한 소식과 비하인드 콘텐츠는<br /> 이제 공식 채널에서도 확인하실 수 있어요!
                 </p>
                 <div className="font-normal text-meet_pink pt-8">
                   자세히 보기
@@ -202,17 +243,52 @@ function SupportComponent() {
             {
               title: "가입은 어디서 하나요?",
               content:
-                "밋밋 MeetMeet 서비스는 단순한 플랫폼을 넘어, 사람과 사람을 연결하고 당신의 일상에 특별함을 더하는 공간힙니다. 다양한 기능을 통해 새로운 경험을 제안합니다.",
+                "밋밋 앱을 설치하신 후, 휴대폰 본인인증 절차를 통해 간편하게 회원가입할 수 있습니다.<br />구글, 애플, 카카오톡 계정연동도 가능하며, 인증 완료 후 서비스를 이용할 수 있습니다.",
             },
             {
               title: "미성년자도 이용이 가능한가요?",
               content:
-                "밋밋 MeetMeet 서비스는 단순한 플랫폼을 넘어, 사람과 사람을 연결하고 당신의 일상에 특별함을 더하는 공간힙니다. 다양한 기능을 통해 새로운 경험을 제안합니다.",
+                "밋밋은 만 18세 이상 성인만 가입 및 이용할 수 있는 서비스입니다.<br />본인인증 과정에서 연령 확인이 이루어지며, 미성년자는 가입이 제한됩니다.",
             },
             {
               title: "탈퇴 어떻게 하나요?",
               content:
-                "앱 > 설정 > 탈퇴하기 메뉴를 통해서 탈퇴하실 수 있습니다.",
+                "앱 내 설정 > 탈퇴 메뉴를 통해 계정을 삭제할 수 있습니다.<br />탈퇴 시 모든 데이터는 복구되지 않으며, 보유 포인트 및 콘텐츠도 삭제되니 신중하게 진행해주세요.",
+            },
+            {
+              title: "포인트 충전은 어떻게 하나요?",
+              content:
+                  "마이페이지 > 포인트 충전 메뉴에서 카드결제, 계좌이체, 간편결제(KakaoPay 등)를 통해 충전할 수 있습니다.<br />충전 후 바로 사용 가능하며, 충전 이력은 결제내역 메뉴에서 확인할 수 있습니다.",
+            },
+            {
+              title: "환불은 가능한가요?",
+              content:
+                  "밋밋의 결제는 Google 인앱 결제(Google Play) 및 **Apple 인앱 결제(App Store)**를 통해 이루어집니다.<br />사용하지 않은 포인트에 대해서는 각 스토어 정책에 따라 해당 스토어에서 환불을 요청하실 수 있습니다.<br />결제 후 포인트를 일부라도 사용하셨을 경우에는 환불이 불가능하니 유의해주세요.<br />자세한 환불 방법은 아래 경로를 참고해주세요:<br />- Google Play 환불 요청 방법 참고<br />- App Store 환불 요청 방법 참고",
+            },
+            {
+              title: "영상통화는 어떻게 하나요?",
+              content:
+                  "상대방의 프로필에서 ‘영상통화 요청’ 버튼을 누르면 연결 요청이 전송됩니다.<br />상대방이 수락하면 자동으로 영상통화가 시작됩니다.",
+            },
+            {
+              title: "상대방이 불쾌한 행동을 했어요. 어떻게 신고하나요?",
+              content:
+                  "통화 중 또는 채팅 중 불쾌하거나 문제가 있는 사용자는 신고할 수 있습니다.<br />프로필 > 신고하기, 채팅방 내 신고버튼, 통화 중 신고 아이콘 등을 통해 신고해주세요.<br />신고된 내용은 내부 검토 후 제재 여부가 결정됩니다.",
+            },
+            {
+              title: "사용자의 피드가 보이지 않아요.",
+              content:
+                  "등급별로 피드를 설정한 경우, 현재 나의 팔로우 등급에서 열람할 수 없는 게시물일 수 있습니다.<br />등급이 올라가면 더 많은 콘텐츠를 열람할 수 있습니다.",
+            },
+            {
+              title: "결제했는데 포인트가 안 들어왔어요.",
+              content:
+                  "결제 직후 앱 재실행 후에도 포인트가 들어오지 않는다면, 결제내역 스크린샷과 함께 고객센터로 문의해주세요.<br />빠르게 확인 후 처리해드립니다.",
+            },
+            {
+              title: "계정을 여러 개 만들 수 있나요?",
+              content:
+                  "하나의 휴대폰 인증 번호로는 1개의 계정만 생성할 수 있습니다.<br />중복 가입은 제한되며, 이용 제한의 사유가 될 수 있습니다.",
             },
           ].map((item, index) => (
             <div key={index}>
@@ -238,9 +314,7 @@ function SupportComponent() {
                   openIndex === index ? "max-h-[1000px]" : "max-h-0"
                 }`}
               >
-                <p className="text-meet_text lg:text-[1.25rem] md:text-[1.25rem] text-[0.875rem] mt-5 leading-8">
-                  {item.content}
-                </p>
+                <p className="text-meet_text lg:text-[1.25rem] md:text-[1.25rem] text-[0.875rem] mt-5 leading-8" dangerouslySetInnerHTML={{ __html: item.content }} />
               </div>
 
               <div className="w-full bg-meet_gray h-[1px] mt-6"></div>
