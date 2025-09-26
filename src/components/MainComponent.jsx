@@ -10,7 +10,7 @@ const MainComponent = () => {
   const swiperRef = useRef(null);
 
   useEffect(() => {
-    const headerHeight = 110;
+    const headerHeight = 250;
     const swiperEl = document.querySelector(".swiper");
     if (!swiperEl) return;
 
