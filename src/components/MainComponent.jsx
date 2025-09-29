@@ -7,56 +7,6 @@ import {useEffect, useRef} from "react";
 
 const MainComponent = () => {
 
-  const swiperRef = useRef(null);
-
-  useEffect(() => {
-    const headerHeight = 250;
-    const swiperEl = document.querySelector(".swiper");
-    if (!swiperEl) return;
-
-    const swiperTop = swiperEl.offsetTop;
-
-    const onScroll = () => {
-      const scrollY = window.scrollY;
-      const swiper = swiperRef.current;
-      if (!swiper) return;
-
-      // Swiper 전 → 비활성화, body 스크롤만
-      if (scrollY + headerHeight < swiperTop) {
-        swiper.mousewheel.disable();
-        document.body.style.overflow = "auto";
-      }
-      // Swiper 영역 안 → 활성화
-      else {
-        // 단, 마지막 슬라이드가 아니어야 함
-        if (!swiper.isEnd) {
-          swiper.mousewheel.enable();
-          document.body.style.overflow = "hidden";
-        }
-      }
-    };
-
-    const onWheel = (e) => {
-      const swiper = swiperRef.current;
-      if (!swiper) return;
-
-      // Swiper 맨 아래에서 더 내릴 때 → Swiper 비활성화, body 스크롤만
-      if (swiper.isEnd && e.deltaY > 0) {
-        swiper.mousewheel.disable();
-        document.body.style.overflow = "auto";
-      }
-    };
-
-    window.addEventListener("scroll", onScroll);
-    swiperEl.addEventListener("wheel", onWheel, { passive: false });
-
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-      swiperEl.removeEventListener("wheel", onWheel);
-      document.body.style.overflow = "auto";
-    };
-  }, []);
-
   return (
   <>
     {/* main intro */}
@@ -77,28 +27,7 @@ const MainComponent = () => {
         </div>
       </div>
     </div>
-  <Swiper
-      direction="vertical"
-      slidesPerView={1}
-      mousewheel={{ releaseOnEdges: true }}
-      modules={[Mousewheel, Pagination]}
-      style={{ height: "1108px" }}
-      pagination={{
-            clickable: true
-          }}
-      onSwiper={(swiper) => {
-        swiperRef.current = swiper;
-        swiper.mousewheel.disable(); // 초기엔 비활성화
-      }}
-      onReachEnd={(swiper) => {
-        // 마지막 슬라이드 → 강제로 비활성화 + body 스크롤
-        swiper.mousewheel.disable();
-        document.body.style.overflow = "auto";
-      }}
-  >
-
-      <SwiperSlide>
-        {/* 실시간 영상통화 */}
+        {/* 1:1 영상통화 */}
         <div className="pt-32 md:px-8">
           <div className="lg:w-36 md:w-[8.75rem] w-20">
             <img src="./img/main/icon-1.svg" />
@@ -118,9 +47,7 @@ const MainComponent = () => {
             />
           </div>
         </div>
-      </SwiperSlide>
 
-      <SwiperSlide>
         {/* 채팅 */}
         <div className="pt-32 md:px-8 bg-meet_black">
           <div className="w-36">
@@ -141,9 +68,7 @@ const MainComponent = () => {
             />
           </div>
         </div>
-      </SwiperSlide>
 
-      <SwiperSlide>
         {/* 피드 */}
         <div className="pt-32 md:px-8">
           <div className="w-36">
@@ -164,10 +89,8 @@ const MainComponent = () => {
             />
           </div>
         </div>
-      </SwiperSlide>
 
-    <SwiperSlide>
-      {/* 피드 */}
+      {/* 팔로우/팔로잉 */}
       <div className="pt-32 md:px-8 bg-meet_light_gray">
         <div className="w-36">
           <img src="./img/main/icon-4.svg" />
@@ -187,10 +110,8 @@ const MainComponent = () => {
           />
         </div>
       </div>
-    </SwiperSlide>
 
-    <SwiperSlide>
-      {/* 피드 */}
+      {/* 선물 */}
       <div className="pt-32 md:px-8">
         <div className="w-36">
           <img src="./img/main/icon-5.svg" />
@@ -210,10 +131,8 @@ const MainComponent = () => {
           />
         </div>
       </div>
-    </SwiperSlide>
 
-    <SwiperSlide>
-      {/* 피드 */}
+      {/* 스토어 */}
       <div className="pt-32 md:px-8">
         <div className="w-36">
           <img src="./img/main/icon-6.svg" />
@@ -233,8 +152,6 @@ const MainComponent = () => {
           />
         </div>
       </div>
-    </SwiperSlide>
-    </Swiper>
   </>
   );
 };

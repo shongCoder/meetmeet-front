@@ -71,7 +71,7 @@ const HeaderWhite = () => {
                   isActive ? "font-bold text-meet_pink" : ""
                 }
               >
-                고객지원
+                서비스 소개
               </NavLink>
             </li>
             <li>

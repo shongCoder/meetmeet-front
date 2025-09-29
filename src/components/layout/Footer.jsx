@@ -16,7 +16,7 @@ const Footer = () => {
           {/* 웹 버전 */}
           <div className="lg:block hidden">
             <ul className="flex w-full font-medium text-meet_black gap-9 justify-end">
-              <li><NavLink to="/support">고객지원</NavLink></li>
+              <li><NavLink to="/support">서비스 소개</NavLink></li>
               <li><NavLink to="/influencer">밋밋셀럽</NavLink></li>
               {/*<li><NavLink to="/exchange">포인트 환전</NavLink></li>*/}
               <li><NavLink to="/download">앱 다운로드</NavLink></li>
@@ -87,7 +87,7 @@ const Footer = () => {
           {/* 태블릿 버전 */}
           <div className="items-start lg:hidden md:block hidden">
             <ul className="flex w-full font-medium text-meet_black gap-9 justify-end">
-              <li><NavLink to="/support">고객지원</NavLink></li>
+              <li><NavLink to="/support">서비스 소개</NavLink></li>
               <li><NavLink to="/influencer">밋밋셀럽</NavLink></li>
               {/*<li><NavLink to="/exchange">포인트 환전</NavLink></li>*/}
               <li><NavLink to="/download">앱 다운로드</NavLink></li>

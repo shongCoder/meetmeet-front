@@ -132,7 +132,7 @@ function SupportComponent() {
                   openIndex === index ? "max-h-[1000px]" : "max-h-0"
                 }`}
               >
-                <p className="text-meet_text lg:text-[1.25rem] md:text-[1.25rem] text-[0.875rem] mt-5 leading-8" dangerouslySetInnerHTML={{ __html: item.content }} />
+                <p className="text-meet_text lg:text-[1.25rem] md:text-[1.25rem] text-[0.875rem] mt-5" dangerouslySetInnerHTML={{ __html: item.content }} />
               </div>
 
               <div className="w-full bg-meet_gray h-[1px] mt-6"></div>
@@ -314,7 +314,7 @@ function SupportComponent() {
                   openIndex === index ? "max-h-[1000px]" : "max-h-0"
                 }`}
               >
-                <p className="text-meet_text lg:text-[1.25rem] md:text-[1.25rem] text-[0.875rem] mt-5 leading-8" dangerouslySetInnerHTML={{ __html: item.content }} />
+                <p className="text-meet_text lg:text-[1.25rem] md:text-[1.25rem] text-[0.875rem] mt-5" dangerouslySetInnerHTML={{ __html: item.content }} />
               </div>
 
               <div className="w-full bg-meet_gray h-[1px] mt-6"></div>
