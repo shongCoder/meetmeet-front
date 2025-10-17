@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://shongCoder.github.io/meetmeet-front/",
+  "homepage": "./",
   "scripts": {
     "build": "vite build",
     "predeploy": "npm run build",

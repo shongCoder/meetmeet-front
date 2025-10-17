@@ -9,5 +9,5 @@ export default defineConfig({
     port: 3000,
     allowedHosts: ["ngrok-free.app", ".ngrok-free.app"],
   },
-  base: "/meetmeet-front/",
+  base: "./",
 });

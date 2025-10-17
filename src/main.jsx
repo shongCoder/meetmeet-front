@@ -31,6 +31,6 @@ document.addEventListener("contextmenu", function (event) {
 
 createRoot(document.getElementById("root")).render(
   <div className="font-sans">
-    <RouterProvider router={mainRouter} basename="/meetmeet-front" fallbackElement={<TitleManager />} />
+    <RouterProvider router={mainRouter} basename="/" fallbackElement={<TitleManager />} />
   </div>,
 );
