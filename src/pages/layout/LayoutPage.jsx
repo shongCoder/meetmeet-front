@@ -6,6 +6,7 @@ import HeaderBlack from "../../components/layout/HeaderBlack";
 import HeaderWhite from "../../components/layout/HeaderWhite";
 import TopButton from "../../components/layout/TopButton.jsx";
 import ModalComponent from "../../components/common/ModalComponent.jsx";
+import TitleManager from "../../components/common/TitleManager.jsx";
 
 const LayoutPage = () => {
   const [isWhiteHeader, setIsWhiteHeader] = useState(true);
@@ -22,6 +23,8 @@ const LayoutPage = () => {
   return (
     <div>
       {/* 헤더 애니메이션 적용 */}
+
+        <TitleManager />
       <AnimatePresence mode="wait">
         <motion.div
           key={isWhiteHeader ? "white-header" : "black-header"}
