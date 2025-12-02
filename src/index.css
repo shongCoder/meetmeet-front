@@ -50,13 +50,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Tomorrow";
+  src: url("https://fonts.gstatic.com/s/tomorrow/v16/PlI9Flu9Pb8fLhWvA4WKNWx4O2cA.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
 * {
   margin: 0 auto;
   padding: 0;
 }
 
 body {
-  font-family: "Pretendard", sans-serif !important;
+  font-family: "Pretendard", sans-serif;
   font-weight: 400;
   -webkit-touch-callout: none;
   -webkit-user-select:none;
@@ -138,4 +145,8 @@ li {
   .notice-contents h2 {
     font-size: 1.125rem;
   }
+}
+
+.tomorrow {
+  font-family: "Tomorrow", sans-serif !important;
 }

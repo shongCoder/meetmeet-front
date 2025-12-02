@@ -145,9 +145,52 @@ function InfluencerComponent() {
               지금 바로 밋밋을 시작하세요
             </p>
             <img src="./img/influencer/chat.png" className="w-[22rem] mt-10" />
-            <button className="bg-meet_pink hover:bg-meet_pink_hover text-meet_white font-bold text-[0.8125rem] rounded-[0.5rem] lg:w-[22rem] md:w-[22rem] w-full py-3 text-center mx-auto">
-              신청하기
-            </button>
+            {/*<button className="bg-meet_pink hover:bg-meet_pink_hover text-meet_white font-bold text-[0.8125rem] rounded-[0.5rem] lg:w-[22rem] md:w-[22rem] w-full py-3 text-center mx-auto">*/}
+            {/*  신청하기*/}
+            {/*</button>*/}
+          </div>
+        </div>
+      </div>
+
+      <div
+          className="py-[5rem] bg-[url('/img/influencer/bg-gradient.png')] bg-no-repeat bg-cover bg-center">
+        <div className="flex items-center justify-center font-bold text-[1.25rem] text-white mb-6 text-center">
+          밋밋 셀럽 1기 신청자 집계
+        </div>
+        <div className="flex items-center justify-between mb-6">
+          {/* 선 */}
+          <div className="flex-grow h-[2px] bg-white opacity-40 mr-6"></div>
+          <div className="flex items-center gap-6 font-bold text-[2.5rem] text-white">
+            <span>지금까지 밋밋셀럽 1기</span>
+            <div className="flex items-center gap-2">
+              <div className="flex items-center justify-center tomorrow font-[600] w-[4rem] h-[5.5rem] rounded-[0.75rem] bg-[linear-gradient(to_bottom,_#4b4b4b_50%,_#171717_51%)]">
+                0
+              </div>
+              <div className="flex items-center justify-center tomorrow font-[600] w-[4rem] h-[5.5rem] rounded-[0.75rem] bg-[linear-gradient(to_bottom,_#4b4b4b_50%,_#171717_51%)]">
+                6
+              </div>
+              <div className="flex items-center justify-center tomorrow font-[600] w-[4rem] h-[5.5rem] rounded-[0.75rem] bg-[linear-gradient(to_bottom,_#4b4b4b_50%,_#171717_51%)]">
+                3
+              </div>
+            </div>
+            <span>명이 신청해 주셨습니다.</span>
+          </div>
+          {/* 선 */}
+          <div className="flex-grow h-[2px] bg-white opacity-40 ml-4"></div>
+        </div>
+        <div className="flex items-center justify-center text-[1rem] text-[#F1F1F1] text-center">
+          2025. 12월 1일 09:00 기준
+        </div>
+      </div>
+      {/* --신청자 집계 */}
+
+      <div className="py-[6.25rem] md:px-8 px-5">
+        <div
+            style={{ boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.04)" }}
+            className="bg-meet_white rounded-[2.5rem] lg:w-[50rem] md:w-full lg:px-0 md:px-0 px-10 py-10 flex flex-col justify-center mt-10 border border-meet_gray"
+        >
+          <div className="py-2 px-3 bg-meet_pink rounded-[100px] text-[0.875rem] font-bold text-white leading-[20px]">
+            Best of the Month
           </div>
         </div>
       </div>

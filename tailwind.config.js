@@ -17,6 +17,7 @@ export default {
       },
       fontFamily: {
         sans: ["Pretendard", "sans-serif"],
+        tomorrow: ["Tomorrow", "sans-serif"],
       },
       screens: {
         md: "640px",
