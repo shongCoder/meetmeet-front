@@ -1,13 +1,17 @@
 import { useEffect, useRef, useState } from "react";
-import BestIcon from "/img/influencer/best-icon.png"
-import RankingImg from "/img/influencer/ranking.png"
-import KaKaoIcon from "/img/influencer/link/kakao.svg"
-import WhatsIcon from "/img/influencer/link/whats.svg"
-import TelegramIcon from "/img/influencer/link/telegram.svg"
+import BestIcon from "/img/influencer/best-icon.png";
+import RankingImg from "/img/influencer/ranking.png";
+import KaKaoIcon from "/img/influencer/link/kakao.svg";
+import WhatsIcon from "/img/influencer/link/whats.svg";
+import TelegramIcon from "/img/influencer/link/telegram.svg";
+import OfficeBg1 from "/img/influencer/office/office-bg-1.png";
+import OfficeBg2 from "/img/influencer/office/office-bg-2.png";
+import OfficeBg3 from "/img/influencer/office/office-bg-3.png";
+import OfficeBg4 from "/img/influencer/office/office-bg-4.png";
 
-const KAKAO_LINK = "https://open.kakao.com/o/sfxBQ54h"
-const WHATS_LINK = "https://t.me/@meet2_support"
-const TELEGRAM_LINK = "https://wa.me/821056929587"
+const KAKAO_LINK = "https://open.kakao.com/o/sfxBQ54h";
+const WHATS_LINK = "https://t.me/@meet2_support";
+const TELEGRAM_LINK = "https://wa.me/821056929587";
 
 function InfluencerComponent() {
   const [count, setCount] = useState(0);
@@ -49,7 +53,7 @@ function InfluencerComponent() {
           }
         });
       },
-      { threshold: 0.4 }
+      { threshold: 0.4 },
     );
 
     observer.observe(counterRef.current);
@@ -61,7 +65,7 @@ function InfluencerComponent() {
   const digits = paddedCount.split("");
 
   return (
-    <div>
+    <div className="flex justify-center items-center flex-col">
       <div className="w-full md:px-8 px-5 lg:mt-[10.625rem] lg:bg-[url('/img/influencer/bg_img.png')] md:bg-[url('/img/influencer/bg_img_tab.png')] bg-[url('/img/influencer/bg_img_mob.png')] bg-no-repeat lg:h-[180rem] md:h-[180rem] h-[170rem] pt-20 bg-[length:100%_auto]">
         <img
           src="./img/influencer/target.png"
@@ -213,8 +217,7 @@ function InfluencerComponent() {
         </div>
       </div>
 
-      <div
-          className="py-[5rem] bg-[url('/img/influencer/bg-gradient.png')] bg-no-repeat bg-cover bg-center">
+      <div className="w-full py-[5rem] bg-[url('/img/influencer/bg-gradient.png')] bg-no-repeat bg-cover bg-center">
         <div className="flex items-center justify-center font-bold text-[1.25rem] text-white mb-6 text-center">
           밋밋 셀럽 1기 신청자 집계
         </div>
@@ -246,21 +249,25 @@ function InfluencerComponent() {
 
       <div className="py-[6.25rem] md:px-8 px-5">
         <div
-            style={{ boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.04)" }}
-            className="bg-meet_white rounded-[2.5rem] lg:w-[50rem] md:w-full lg:px-0 md:px-0 px-10 py-10 flex flex-col justify-center mt-10 border border-meet_gray"
+          style={{ boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.04)" }}
+          className="bg-meet_white rounded-[2.5rem] lg:w-[50rem] md:w-full lg:px-0 md:px-0 px-10 py-10 flex flex-col justify-center mt-10 border border-meet_gray"
         >
           <img src={BestIcon} className="w-[6.25rem] h-[6.25rem] mb-4" />
           <div className="py-2 px-3 bg-meet_pink shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)] rounded-[100px] text-[0.875rem] font-bold text-white leading-[20px] mb-4">
             Best of the Month
           </div>
-          <div className="text-meet_black text-[2rem] font-[700] leading-[2.75rem] mb-3">이달의 베스트 7공주 출금 랭킹 현황</div>
-          <div className="text-meet_text text-[1rem] font-[500] leading-6 mb-5">지금 바로 밋밋을 시작하세요</div>
+          <div className="text-meet_black text-[2rem] font-[700] leading-[2.75rem] mb-3">
+            이달의 베스트 7공주 출금 랭킹 현황
+          </div>
+          <div className="text-meet_text text-[1rem] font-[500] leading-6 mb-5">
+            지금 바로 밋밋을 시작하세요
+          </div>
           <img className="" src={RankingImg} />
         </div>
       </div>
       {/* 이달의 베스트 출금현황 */}
 
-      <div className="flex flex-col justify-center items-center py-[6.25rem] md:px-8 px-5 bg-[linear-gradient(to_bottom,#171717_0%,#1A1A1F_50%,#171717_100%)]">
+      <div className="w-full flex flex-col justify-center items-center py-[6.25rem] md:px-8 px-5 bg-[linear-gradient(to_bottom,#171717_0%,#1A1A1F_50%,#171717_100%)]">
         <div className="py-2 px-3 bg-meet_pink shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)] rounded-[100px] text-[0.875rem] font-bold text-white leading-[20px] mb-4">
           How to Apply
         </div>
@@ -273,28 +280,54 @@ function InfluencerComponent() {
           </div>
         </div>
         <div className="text-[1.125rem] leading-[1.75rem] text-[#c8c8c8] text-center font-[200] mb-5">
-          <div>신청 전에 먼저 앱을 설치하시고, <span className="font-[400] text-white">사용하시는 앱의 아이디</span>를 저희 밋밋 집사에게 전달해주시면</div>
-          <div className="font-[400] text-white">뉴 밋밋셀럽 1기로 바로 승천하실 수 있습니다.</div>
+          <div>
+            신청 전에 먼저 앱을 설치하시고,{" "}
+            <span className="font-[400] text-white">
+              사용하시는 앱의 아이디
+            </span>
+            를 저희 밋밋 집사에게 전달해주시면
+          </div>
+          <div className="font-[400] text-white">
+            뉴 밋밋셀럽 1기로 바로 승천하실 수 있습니다.
+          </div>
         </div>
         <div className="flex justify-between gap-[2rem] py-[2rem] px-[10rem]">
-          <a href={KAKAO_LINK} target="_blank" className="flex flex-col justify-center items-center gap-3">
+          <a
+            href={KAKAO_LINK}
+            target="_blank"
+            className="flex flex-col justify-center items-center gap-3"
+          >
             <img src={KaKaoIcon} />
-            <span className="text-[1rem] font-bold leading-[1.5rem] text-white">카톡 채널 문의</span>
+            <span className="text-[1rem] font-bold leading-[1.5rem] text-white">
+              카톡 채널 문의
+            </span>
           </a>
-          <a href={WHATS_LINK} target="_blank" className="flex flex-col justify-center items-center gap-3">
+          <a
+            href={WHATS_LINK}
+            target="_blank"
+            className="flex flex-col justify-center items-center gap-3"
+          >
             <img src={WhatsIcon} />
-            <span className="text-[1rem] font-bold leading-[1.5rem] text-white">와츠 앱 문의</span>
+            <span className="text-[1rem] font-bold leading-[1.5rem] text-white">
+              와츠 앱 문의
+            </span>
           </a>
-          <a href={TELEGRAM_LINK} target="_blank" className="flex flex-col justify-center items-center gap-3">
+          <a
+            href={TELEGRAM_LINK}
+            target="_blank"
+            className="flex flex-col justify-center items-center gap-3"
+          >
             <img src={TelegramIcon} />
-            <span className="text-[1rem] font-bold leading-[1.5rem] text-white">텔레그램 문의</span>
+            <span className="text-[1rem] font-bold leading-[1.5rem] text-white">
+              텔레그램 문의
+            </span>
           </a>
         </div>
       </div>
       {/* 인플루언서 신청 방법 */}
 
-      <div className="py-[6.25rem] md:px-8 px-5 flex justify-center items-center">
-        <div className="lg:w-[50rem] md:w-full">
+      <div className="py-[6.25rem] md:px-8 px-5 flex flex-col justify-center items-center">
+        <div className="lg:w-[50rem] md:w-full mb-10">
           <div className="py-2 px-3 bg-meet_pink inline-block shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)] rounded-[100px] text-[0.875rem] font-bold text-white leading-[20px] mb-4">
             Global Marriage Consulting Agency
           </div>
@@ -304,20 +337,85 @@ function InfluencerComponent() {
               <div>전문에이전시</div>
             </div>
             <div className="text-[1rem] text-meet_text leading-[1.5rem] text-right m-0">
-              <div>저희 (주)신아국제교류센터한국지사 글로벌 결혼 미팅 전문에이젼시</div>
+              <div>
+                저희 (주)신아국제교류센터한국지사 글로벌 결혼 미팅 전문에이젼시
+              </div>
               <div>로 시작해서 각종 만남 커뮤니티를 운영중입니다.</div>
             </div>
           </div>
         </div>
         {/* 타이틀 */}
 
-        <div>
-          <ul></ul>
-        </div>
+        <div className="w-ful overflow-hidden">
+          <ul className="flex gap-6 flex flex-nowrap overflow-x-auto overflow-y-hidden no-scrollbar">
+            <li
+              className="relative w-[22.5rem] p-4 h-[22.5rem] border-1 border-[#F1F1F1] rounded-[1rem] overflow-hidden shadow-[0_24px_20px_0_rgba(0,0,0,0.04)] bg-cover bg-center bg-no-repeat"
+              style={{ backgroundImage: `url(${OfficeBg1})` }}
+            >
+              <div className="w-full h-full">
+                <div className="inline-block  bg-meet_pink py-2 px-3 rounded-[6.25rem] shadow-[inset_4px_4px_14px_0px_rgba(255,255,255,0.2)]">
+                  <span className="text-white text-[0.875rem] font-bold leading-[1.25rem]">
+                    국내 오피스
+                  </span>
+                </div>
 
+                <div className="absolute bottom-4 text-[1.25rem] text-white font-bold">
+                  탕비실
+                </div>
+              </div>
+            </li>
+            <li
+              className="relative w-[22.5rem] p-4 h-[22.5rem] border-1 border-[#F1F1F1] rounded-[1rem] overflow-hidden shadow-[0_24px_20px_0_rgba(0,0,0,0.04)] bg-cover bg-center bg-no-repeat"
+              style={{ backgroundImage: `url(${OfficeBg2})` }}
+            >
+              <div className="w-full h-full">
+                <div className="inline-block  bg-meet_pink py-2 px-3 rounded-[6.25rem] shadow-[inset_4px_4px_14px_0px_rgba(255,255,255,0.2)]">
+                  <span className="text-white text-[0.875rem] font-bold leading-[1.25rem]">
+                    국내 오피스
+                  </span>
+                </div>
+
+                <div className="absolute bottom-4 text-[1.25rem] text-white font-bold">
+                  회의실
+                </div>
+              </div>
+            </li>
+            <li
+              className="relative w-[22.5rem] p-4 h-[22.5rem] border-1 border-[#F1F1F1] rounded-[1rem] overflow-hidden shadow-[0_24px_20px_0_rgba(0,0,0,0.04)] bg-cover bg-center bg-no-repeat"
+              style={{ backgroundImage: `url(${OfficeBg3})` }}
+            >
+              <div className="w-full h-full">
+                <div className="inline-block  bg-meet_pink py-2 px-3 rounded-[6.25rem] shadow-[inset_4px_4px_14px_0px_rgba(255,255,255,0.2)]">
+                  <span className="text-white text-[0.875rem] font-bold leading-[1.25rem]">
+                    국내 오피스
+                  </span>
+                </div>
+
+                <div className="absolute bottom-4 text-[1.25rem] text-white font-bold">
+                  입구 파사드
+                </div>
+              </div>
+            </li>
+            <li
+              className="relative w-[22.5rem] p-4 h-[22.5rem] border-1 border-[#F1F1F1] rounded-[1rem] overflow-hidden shadow-[0_24px_20px_0_rgba(0,0,0,0.04)] bg-cover bg-center bg-no-repeat"
+              style={{ backgroundImage: `url(${OfficeBg4})` }}
+            >
+              <div className="w-full h-full">
+                <div className="inline-block  bg-[#0EC167] py-2 px-3 rounded-[6.25rem] shadow-[inset_4px_4px_14px_0px_rgba(255,255,255,0.2)]">
+                  <span className="text-white text-[0.875rem] font-bold leading-[1.25rem]">
+                    해외 지사
+                  </span>
+                </div>
+
+                <div className="absolute bottom-4 text-[1.25rem] text-white font-bold">
+                  오피스
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
       {/* 글로벌 결혼 미팅 전문에이전시 */}
-
     </div>
   );
 }
