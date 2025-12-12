@@ -114,7 +114,7 @@ function InfluencerComponent() {
 
   return (
     <div className="flex justify-center items-center flex-col">
-      <div className="w-full md:px-8 px-5 lg:mt-[10.625rem] lg:bg-[url('/img/influencer/bg_img.png')] md:bg-[url('/img/influencer/bg_img_tab.png')] bg-[url('/img/influencer/bg_img_mob.png')] bg-no-repeat lg:h-[180rem] md:h-[180rem] h-[170rem] pt-20 bg-[length:100%_auto]">
+      <div className="w-full md:px-8 px-5 lg:mt-[10.625rem] lg:bg-[url('/img/influencer/bg_img.png')] md:bg-[url('/img/influencer/bg_img_tab.png')] bg-[url('/img/influencer/bg_img_mob.png')] bg-no-repeat lg:h-[180rem] md:h-[180rem] h-[180rem] pt-20 bg-[length:100%_auto]">
         <img
           src="./img/influencer/target.png"
           className="lg:w-[7.5rem] md:w-[7.5rem] w-[6.25rem]"
