@@ -332,7 +332,7 @@ function InfluencerComponent() {
         <div className="py-2 px-3 bg-meet_pink shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)] rounded-[100px] text-[0.875rem] font-bold text-white leading-[20px] mb-4">
           How to Apply
         </div>
-        <div className="lg:text-[2rem] md:text-[1.5rem] text-[1.25rem] font-[700] leading-[3.25rem] text-center mb-5">
+        <div className="lg:text-[2rem] md:text-[1.5rem] text-[1.25rem] font-[700] lg:leading-[3.25rem] md:leading-[2.25rem] leading-[2rem] text-center mb-5">
           <div className="bg-[linear-gradient(135deg,#FF9256_20%,#FF4062_80%)] bg-clip-text text-transparent">
             원하시는 소통앱으로 신청해주시면,
           </div>
