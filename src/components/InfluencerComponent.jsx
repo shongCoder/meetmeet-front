@@ -11,8 +11,8 @@ import OfficeBg3 from "/img/influencer/office/office-bg-3.png";
 import OfficeBg4 from "/img/influencer/office/office-bg-4.png";
 
 const KAKAO_LINK = "https://open.kakao.com/o/sfxBQ54h";
-const WHATS_LINK = "https://t.me/@meet2_support";
-const TELEGRAM_LINK = "https://wa.me/821056929587";
+const TELEGRAM_LINK = "https://t.me/@meet2_support";
+const WHATS_LINK = "https://wa.me/821056929587";
 
 // 이미지 리스트
 const officeItems = [
@@ -148,7 +148,7 @@ function InfluencerComponent() {
              lg:justify-between md:justify-between justify-center gap-6 border border-meet_gray"
           >
             <div className="p-0 m-0 lg:text-left md:text-left text-center">
-              <div className="text-[0.75rem] text-meet_white font-bold px-3 py-1 bg-meet_pink rounded-full w-auto inline-block">
+              <div className="text-[0.8125rem] text-meet_white font-bold px-3 py-3 bg-meet_pink rounded-full w-auto inline-block shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)]">
                 맛스타 1기 모집
               </div>
               <p className="text-meet_black font-extrabold lg:text-[1.5rem] md:text-[1.5rem] text-[1.2rem] leading-8 mt-3">
@@ -181,7 +181,7 @@ function InfluencerComponent() {
             </div>
 
             <div className="p-0 m-0 lg:text-left md:text-left text-center">
-              <div className="text-[0.75rem] text-meet_white font-bold px-3 py-1 bg-meet_pink rounded-full w-auto inline-block">
+              <div className="text-[0.8125rem] text-meet_white font-bold px-3 py-3 bg-meet_pink rounded-full w-auto inline-block shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)]">
                 밋밋 뇌물
               </div>
 
@@ -210,9 +210,10 @@ function InfluencerComponent() {
              lg:justify-between md:justify-between justify-center lg:gap-0 md:gap-0 gap-6 mt-10 border border-meet_gray"
           >
             <div className="p-0 m-0 lg:text-left md:text-left text-center">
-              <div className="text-[0.75rem] text-meet_white font-bold px-3 py-1 bg-meet_pink rounded-full w-auto inline-block">
+              <div className="text-[0.8125rem] text-meet_white font-bold px-3 py-3 bg-meet_pink rounded-full w-auto inline-block shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)]">
                 우대 모집
               </div>
+
 
               <p className="text-meet_black font-extrabold lg:text-[1.5rem] md:text-[1.5rem] text-[1.2rem] leading-8 mt-3">
                 <span className="block">밋밋에서 이런</span>
@@ -334,7 +335,7 @@ function InfluencerComponent() {
         </div>
         <div className="lg:text-[2rem] md:text-[1.5rem] text-[1.25rem] font-[700] lg:leading-[3.25rem] md:leading-[2.25rem] leading-[2rem] text-center mb-5">
           <div className="bg-[linear-gradient(135deg,#FF9256_20%,#FF4062_80%)] bg-clip-text text-transparent">
-            원하시는 소통앱으로 신청해주시면,
+            중대통신앱으로 신청 가능,
           </div>
           <div className="bg-[linear-gradient(135deg,#FF9256_20%,#FF4062_80%)] bg-clip-text text-transparent">
             공주님들을 정성껏 모시는 집사가 친절히 응대해드립니다.
@@ -359,9 +360,10 @@ function InfluencerComponent() {
             className="flex flex-col justify-center items-center gap-3"
           >
             <img src={KaKaoIcon} className="md:w-[4.75rem] w-[3rem] md:h-[4.75rem] h-[3rem]" />
-            <span className="md:text-[1rem] text-[0.8125rem] font-bold leading-[1.5rem] text-white whitespace-nowrap">
+            <div className="md:text-[1rem] text-[0.8125rem] font-bold leading-[1.5rem] text-white whitespace-nowrap">
+              밋밋오피셜<br />
               카톡 채널 문의
-            </span>
+            </div>
           </a>
           <a
             href={WHATS_LINK}
@@ -369,9 +371,10 @@ function InfluencerComponent() {
             className="flex flex-col justify-center items-center gap-3"
           >
             <img src={WhatsIcon} className="md:w-[4.75rem] w-[3rem] md:h-[4.75rem] h-[3rem]" />
-            <span className="md:text-[1rem] text-[0.8125rem] font-bold leading-[1.5rem] text-white whitespace-nowrap">
+            <div className="md:text-[1rem] text-[0.8125rem] font-bold leading-[1.5rem] text-white whitespace-nowrap">
+              밋밋오피셜<br />
               와츠 앱 문의
-            </span>
+            </div>
           </a>
           <a
             href={TELEGRAM_LINK}
@@ -379,9 +382,10 @@ function InfluencerComponent() {
             className="flex flex-col justify-center items-center gap-3"
           >
             <img src={TelegramIcon} className="md:w-[4.75rem] w-[3rem] md:h-[4.75rem] h-[3rem]" />
-            <span className="md:text-[1rem] text-[0.8125rem] font-bold leading-[1.5rem] text-white whitespace-nowrap">
+            <div className="md:text-[1rem] text-[0.8125rem] font-bold leading-[1.5rem] text-white whitespace-nowrap">
+              밋밋오피셜<br />
               텔레그램 문의
-            </span>
+            </div>
           </a>
         </div>
       </div>
