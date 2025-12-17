@@ -143,7 +143,7 @@ function InfluencerComponent() {
         <div className="mt-[-1rem] relative z-10">
           <div
             style={{ boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.04)" }}
-            className="lg:w-[50rem] md:w-full w-full lg:h-[17.5rem] md:h-[17.5rem] lg:px-[3.75rem] md:px-[3.75rem] px-10 lg:py-5 md:py-5 py-8
+            className="lg:w-[50rem] md:w-full w-full lg:h-[17.5rem] md:h-[17.5rem] lg:px-[2.5rem] md:px-[2.5rem] px-10 lg:py-[2.5rem] md:py-[2.5rem] py-8
              bg-meet_white rounded-[2.5rem] flex lg:flex-row md:flex-row flex-col lg:items-center md:items-center items-center
              lg:justify-between md:justify-between justify-center gap-6 border border-meet_gray"
           >
@@ -155,8 +155,12 @@ function InfluencerComponent() {
                 <span className="block">밋밋에서 여성회원님을</span>
                 <span className="block">공주님 여왕님으로 모시겠습니다!</span>
               </p>
+              <p className="text-[1.125rem] leading-[1.75rem] text-meet_menu">
+                밋밋셀럽1기에 신청하시면 100명 한정으로<br />
+                일반 여성회원보다 <span className="font-semibold text-meet_pink">2배의 포인트를 즉시 지급</span>합니다.
+              </p>
               <p className="text-meet_text text-[0.8125rem] mt-2">
-                25년 4월 1일에서 30일 한달 선착순 300명
+                (모집 마감일 25년 12월 31일까지)
               </p>
             </div>
             <div className="p-0 m-0 flex justify-center">
@@ -169,7 +173,7 @@ function InfluencerComponent() {
 
           <div
             style={{ boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.04)" }}
-            className="lg:w-[50rem] md:w-full w-full lg:h-[17.5rem] md:h-auto h-auto lg:px-[3.75rem] md:px-[3.75rem] px-10 lg:py-5 md:py-5 py-8
+            className="lg:w-[50rem] md:w-full w-full lg:h-[17.5rem] md:h-auto h-auto lg:px-[2.5rem] md:px-[2.5rem] px-10 lg:py-[2.5rem] md:py-[2.5rem] py-8
              bg-meet_white rounded-[2.5rem] flex lg:flex-row md:flex-row flex-col lg:items-center md:items-center items-center
              lg:gap-[3.75rem] md:gap-[3.75rem] gap-6 mt-10 border border-meet_gray"
           >
@@ -190,8 +194,14 @@ function InfluencerComponent() {
                 <span className="block">밋밋 1기님께 드리는 뇌물</span>
               </p>
 
+              <p className="text-[1.125rem] leading-[1.75rem] text-meet_menu">
+                일반 여성도 한시간 비대면 영상채팅만 해도 54,000원<br />
+                <span className="font-semibold text-meet_pink">밋밋셀럽 1기는 여기에 두배 금액인 108,000원</span> 드립니다.<br />
+                출금 신청하시면 익일 바로지급
+              </p>
+
               <p className="text-meet_text text-[0.8125rem] mt-2">
-                영통 활동시 누적 2시간만 되어도 십만원 익일 지급
+                단 2배포인트 지급은 2026년 03월 31일 까지만 진행합니다
               </p>
             </div>
 
@@ -205,7 +215,7 @@ function InfluencerComponent() {
 
           <div
             style={{ boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.04)" }}
-            className="lg:w-[50rem] md:w-full w-full lg:h-[17.5rem] md:h-auto h-auto lg:px-[3.75rem] md:px-[3.75rem] px-10 lg:py-5 md:py-5 py-8
+            className="lg:w-[50rem] md:w-full w-full lg:h-[17.5rem] md:h-auto h-auto lg:px-[2.5rem] md:px-[2.5rem] px-10 lg:py-[2.5rem] md:py-[2.5rem] py-8
              bg-meet_white rounded-[2.5rem] flex lg:flex-row md:flex-row flex-col lg:items-center md:items-center items-center
              lg:justify-between md:justify-between justify-center lg:gap-0 md:gap-0 gap-6 mt-10 border border-meet_gray"
           >
@@ -220,7 +230,7 @@ function InfluencerComponent() {
                 <span className="block">여성분을 우대합니다</span>
               </p>
 
-              <p className="text-meet_text text-[0.875rem] font-semibold mt-2">
+              <p className="text-meet_menu text-[1.125rem] font-semibold mt-2">
                 #출근 없이 돈벌고 싶은분
                 <br />
                 #투잡하고 싶은분
