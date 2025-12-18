@@ -352,7 +352,7 @@ function InfluencerComponent() {
         </div>
         <div className="lg:text-[2rem] md:text-[1.5rem] text-[1.25rem] font-[700] lg:leading-[3.25rem] md:leading-[2.25rem] leading-[2rem] text-center mb-5">
           <div className="bg-[linear-gradient(135deg,#FF9256_20%,#FF4062_80%)] bg-clip-text text-transparent">
-            중대통신앱으로 신청 가능,
+            원하시는 소통앱으로 신청해주시면,
           </div>
           <div className="bg-[linear-gradient(135deg,#FF9256_20%,#FF4062_80%)] bg-clip-text text-transparent">
             공주님들을 정성껏 모시는 집사가 친절히 응대해드립니다.
