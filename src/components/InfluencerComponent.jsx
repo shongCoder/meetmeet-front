@@ -14,7 +14,7 @@ import OfficeBg6 from "/img/influencer/office/office-bg-6.jpg";
 import OfficeBg7 from "/img/influencer/office/office-bg-7.jpg";
 
 const KAKAO_LINK = "https://open.kakao.com/o/sfxBQ54h";
-const TELEGRAM_LINK = "https://t.me/@meet2_support";
+const TELEGRAM_LINK = "https://t.me/meet2_support";
 const WHATS_LINK = "https://wa.me/821056929587";
 
 // 이미지 리스트
@@ -164,7 +164,7 @@ function InfluencerComponent() {
               </p>
               <p className="text-[1.125rem] leading-[1.75rem] text-meet_menu">
                 밋밋셀럽1기에 신청하시면 100명 한정으로<br />
-                일반 여성회원보다 <span className="font-semibold text-meet_pink">2배의 포인트를 즉시 지급</span>합니다.
+                일반 여성회원보다 <span className="font-semibold text-meet_pink">10배의 포인트를 즉시 지급</span>합니다.
               </p>
               <p className="text-meet_text md:text-[0.875rem] text-[0.75rem] mt-2">
                 (모집 마감일 25년 12월 31일까지)
@@ -202,13 +202,13 @@ function InfluencerComponent() {
               </p>
 
               <p className="text-[1.125rem] leading-[1.75rem] text-meet_menu">
-                일반 여성도 한시간 비대면 영상채팅만 해도 54,000원<br />
-                <span className="font-semibold text-meet_pink">밋밋셀럽 1기는 여기에 두배 금액인 108,000원</span> 드립니다.<br />
-                출금 신청하시면 익일 바로지급
+                이번 이벤트 기간내에 참여하시면 일반등급에서 프로로 승격하며<br />
+                승격이후로는 영상채팅 1시간에 54,000원, 그리고
+                <span className="font-semibold text-meet_pink"> 밋밋1기 셀럽으로 54,000원 추가해서  108,000원</span>을 드립니다.
               </p>
 
               <p className="text-meet_text md:text-[0.875rem] text-[0.75rem] mt-2">
-                단 2배포인트 지급은 2026년 03월 31일 까지만 진행합니다
+                단 10배포인트 지급은 2026년 03월 31일 까지만 진행합니다
               </p>
             </div>
 
