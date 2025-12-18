@@ -39,35 +39,33 @@ const Footer = () => {
                 <div>
                   <div className="inline-block mr-3">
                     <span className="font-medium">상호 : </span>
-                    <span>(주)케이비즈플래닛</span>
+                    <span>(주)신아국제교류센터한국지사</span>
                   </div>
                   <div className="inline-block mr-3">
                     <span className="font-medium">대표 : </span>
-                    <span>황성연</span>
+                    <span>안영상</span>
                   </div>
+                </div>
+                <div>
                   <div className="inline-block">
                     <span className="font-medium">주소 : </span>
-                    <span>경기도 광주시 문형산길 93, 202-에이8호</span>
+                    <span>경기도 용인시 기흥구 구갈로60번길 9-1, 6층 602-에이64(구갈동, 라파빌딩)</span>
                   </div>
                 </div>
                 <div>
                   <div className="inline-block mr-3">
                     <span className="font-medium">사업자 등록번호 : </span>
-                    <span>126-86-35315</span>
+                    <span>438-86-03453</span>
                   </div>
                   <div className="inline-block">
                     <span className="font-medium">통신판매업 신고번호 : </span>
-                    <span>2023-용인기흥-2891</span>
+                    <span>2025-용인기흥-02397호</span>
                   </div>
                 </div>
                 <div>
-                  <div className="inline-block mr-3">
-                    <span className="font-medium">이메일 : </span>
-                    <span>meetmeet.help@gmail.com</span>
-                  </div>
                   <div className="inline-block">
-                    <span className="font-medium">상담전화 : </span>
-                    <span>070-000-0000</span>
+                    <span className="font-medium">이메일 : </span>
+                    <span>meetmeet.help24@gmail.com</span>
                   </div>
                 </div>
               </div>
@@ -119,33 +117,29 @@ const Footer = () => {
                   <div>
                     <div className="inline-block mr-3">
                       <span className="font-medium">상호 : </span>
-                      <span>(주)케이비즈플래닛</span>
+                      <span>(주)신아국제교류센터한국지사</span>
                     </div>
                     <div className="inline-block mr-3">
                       <span className="font-medium">대표 : </span>
-                      <span>황성연</span>
+                      <span>안영상</span>
                     </div>
                     <div className="inline-block mr-3">
                       <span className="font-medium">주소 : </span>
-                      <span>경기도 광주시 문형산길 93, 202-에이8호</span>
+                      <span>경기도 용인시 기흥구 구갈로60번길 9-1, 6층 602-에이64(구갈동, 라파빌딩)</span>
                     </div>
                     <div className="inline-block mr-3">
                       <span className="font-medium">사업자 등록번호 : </span>
-                      <span>126-86-35315</span>
+                      <span>438-86-03453</span>
                     </div>
                   </div>
                   <div>
                     <div className="inline-block mr-3">
                       <span className="font-medium">통신판매업 신고번호 : </span>
-                      <span>2023-용인기흥-2891</span>
-                    </div>
-                    <div className="inline-block mr-3">
-                      <span className="font-medium">이메일 : </span>
-                      <span>meetmeet.help@gmail.com</span>
+                      <span>2025-용인기흥-02397호</span>
                     </div>
                     <div className="inline-block">
-                      <span className="font-medium">상담전화 : </span>
-                      <span>070-000-0000</span>
+                      <span className="font-medium">이메일 : </span>
+                      <span>meetmeet.help24@gmail.com</span>
                     </div>
                   </div>
                 </div>
@@ -167,7 +161,7 @@ const Footer = () => {
                 className="flex items-center justify-start cursor-pointer mt-6"
                 onClick={() => setIsOpen(!isOpen)}
             >
-              <span className="!m-0 pr-1 text-[0.75rem]">(주)케이비즈플래닛</span>
+              <span className="!m-0 pr-1 text-[0.75rem]">(주)신아국제교류센터한국지사</span>
               <img
                   className={`!m-0 transition-transform duration-300 ${
                       isOpen ? "rotate-180" : "rotate-0"
@@ -201,11 +195,11 @@ const Footer = () => {
               <div className="mt-4 text-left text-[0.6875rem] w-full">
                 <div>
                   <span className="inline-block font-medium">대표 : </span>
-                  <span>황성연</span>
+                  <span>안영상</span>
                   <span className="inline-block ml-2 font-medium">
                   사업자 등록번호 :
                 </span>
-                  <span>126-86-35315</span>
+                  <span>438-86-03453</span>
                 </div>
                 <div>
                   <div>
@@ -214,11 +208,7 @@ const Footer = () => {
                   </div>
                   <div>
                     <span className="font-medium">이메일 : </span>
-                    <span>meetmeet.help@gmail.com</span>
-                  </div>
-                  <div>
-                    <span className="font-medium">상담전화 : </span>
-                    <span>070-000-0000</span>
+                    <span>경기도 용인시 기흥구 구갈로60번길 9-1, 6층 602-에이64(구갈동, 라파빌딩)</span>
                   </div>
                 </div>
               </div>

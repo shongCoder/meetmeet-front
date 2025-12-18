@@ -5,10 +5,13 @@ import RankingMobImg from "/img/influencer/ranking-m.png";
 import KaKaoIcon from "/img/influencer/link/kakao.svg";
 import WhatsIcon from "/img/influencer/link/whats.svg";
 import TelegramIcon from "/img/influencer/link/telegram.svg";
-import OfficeBg1 from "/img/influencer/office/office-bg-1.png";
+// import OfficeBg1 from "/img/influencer/office/office-bg-1.png";
 import OfficeBg2 from "/img/influencer/office/office-bg-2.png";
 import OfficeBg3 from "/img/influencer/office/office-bg-3.png";
 import OfficeBg4 from "/img/influencer/office/office-bg-4.png";
+import OfficeBg5 from "/img/influencer/office/office-bg-5.jpg";
+import OfficeBg6 from "/img/influencer/office/office-bg-6.jpg";
+import OfficeBg7 from "/img/influencer/office/office-bg-7.jpg";
 
 const KAKAO_LINK = "https://open.kakao.com/o/sfxBQ54h";
 const TELEGRAM_LINK = "https://t.me/@meet2_support";
@@ -16,10 +19,14 @@ const WHATS_LINK = "https://wa.me/821056929587";
 
 // 이미지 리스트
 const officeItems = [
-  { bg: OfficeBg1, tag: "국내 오피스", title: "탕비실", color: "bg-meet_pink" },
-  { bg: OfficeBg2, tag: "국내 오피스", title: "회의실", color: "bg-meet_pink" },
-  { bg: OfficeBg3, tag: "국내 오피스", title: "입구 파사드", color: "bg-meet_pink" },
-  { bg: OfficeBg4, tag: "해외 지사", title: "오피스", color: "bg-[#0EC167]" },
+  // { bg: OfficeBg1, tag: "국내 오피스", title: "탕비실", color: "bg-meet_pink" },
+  { bg: OfficeBg2, tag: "경기도 광주 신사옥", title: "미팅&접견 룸", color: "bg-meet_pink" },
+  { bg: OfficeBg3, tag: "경기도 광주 신사옥", title: "로비", color: "bg-meet_pink" },
+  { bg: OfficeBg4, tag: "경기도 광주 신사옥", title: "매니지먼트", color: "bg-meet_pink" },
+  { bg: OfficeBg5, tag: "본사", title: "디자인팀", color: "bg-meet_pink" },
+  { bg: OfficeBg6, tag: "베트남 지사", title: "단체사진", color: "bg-[#0EC167]" },
+  { bg: OfficeBg7, tag: "베트남 지사", title: "개발팀", color: "bg-[#0EC167]" },
+  // { bg: OfficeBg4, tag: "경기도 광주 신사옥", title: "매니지먼트", color: "bg-[#0EC167]" }, 초록 바탕
 ];
 
 function InfluencerComponent() {
@@ -114,26 +121,26 @@ function InfluencerComponent() {
 
   return (
     <div className="flex justify-center items-center flex-col">
-      <div className="w-full md:px-8 px-5 lg:mt-[10.625rem] lg:bg-[url('/img/influencer/bg_img.png')] md:bg-[url('/img/influencer/bg_img_tab.png')] bg-[url('/img/influencer/bg_img_mob.png')] bg-no-repeat lg:h-[180rem] md:h-[180rem] h-[180rem] pt-20 bg-[length:100%_auto]">
+      <div className="w-full md:px-8 px-5 lg:mt-[10.625rem] lg:bg-[url('/img/influencer/bg_img.png')] md:bg-[url('/img/influencer/bg_img_tab.png')] bg-[url('/img/influencer/bg_img_mob.png')] mb-[6.25rem] bg-no-repeat pt-20 bg-[length:100%_auto]">
         <img
           src="./img/influencer/target.png"
           className="lg:w-[7.5rem] md:w-[7.5rem] w-[6.25rem]"
         />
-        <div className="text-meet_text lg:text-[1.5rem] md:text-[1.5rem] text-[1rem] text-center mt-2">
+        <div className="text-[#545454] lg:text-[1.625rem] md:text-[1.25rem] text-[1rem] text-center mt-2">
           저희 밋밋을 더 빛나게 해줄
         </div>
         <img
           src="./img/influencer/title.png"
-          className="w-[56.25rem] mt-8 lg:block md:block hidden"
+          className="w-[56.25rem] lg:block md:block hidden"
         />
         <img
           src="./img/influencer/title_mob.png"
           className="w-[18.375rem] mt-5 lg:hidden md:hidden block"
         />
         <div className="flex justify-center lg:mt-[3.75rem] md:mt-[3.75rem] mt-8 relative z-10">
-          <button className="bg-meet_pink hover:bg-meet_pink_hover lg:px-8 md:px-8 px-6 lg:py-5 md:py-5 py-3 shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)] text-meet_white font-bold rounded-full">
+          <a href={KAKAO_LINK} target="_blank" className="bg-meet_pink hover:bg-meet_pink_hover lg:px-8 md:px-8 px-6 lg:py-5 md:py-5 py-3 shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)] text-meet_white font-bold rounded-full">
             인플루언서 지원하기
-          </button>
+          </a>
         </div>
         <div className="lg:mt-[9rem] md:mt-[9rem] mt-7">
           <img src="./img/influencer/girls.png" className="w-[50rem]" />
@@ -143,7 +150,7 @@ function InfluencerComponent() {
         <div className="mt-[-1rem] relative z-10">
           <div
             style={{ boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.04)" }}
-            className="lg:w-[50rem] md:w-full w-full lg:h-[17.5rem] md:h-[17.5rem] lg:px-[2.5rem] md:px-[2.5rem] px-10 lg:py-[2.5rem] md:py-[2.5rem] py-8
+            className="lg:w-[50rem] md:w-full w-full lg:px-[2.5rem] md:px-[2.5rem] px-10 lg:py-[2.5rem] md:py-[2.5rem] py-8
              bg-meet_white rounded-[2.5rem] flex lg:flex-row md:flex-row flex-col lg:items-center md:items-center items-center
              lg:justify-between md:justify-between justify-center gap-6 border border-meet_gray"
           >
@@ -151,7 +158,7 @@ function InfluencerComponent() {
               <div className="text-[0.8125rem] text-meet_white font-bold px-3 py-3 bg-meet_pink rounded-full w-auto inline-block shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)]">
                 맛스타 1기 모집
               </div>
-              <p className="text-meet_black font-extrabold lg:text-[1.5rem] md:text-[1.5rem] text-[1.2rem] leading-8 mt-3">
+              <p className="text-meet_black font-extrabold lg:text-[2rem] md:text-[1.5rem] text-[1.25rem] lg:leading-[2.75rem] md:leading-[2.25rem] leading-[2rem] mt-3">
                 <span className="block">밋밋에서 여성회원님을</span>
                 <span className="block">공주님 여왕님으로 모시겠습니다!</span>
               </p>
@@ -159,7 +166,7 @@ function InfluencerComponent() {
                 밋밋셀럽1기에 신청하시면 100명 한정으로<br />
                 일반 여성회원보다 <span className="font-semibold text-meet_pink">2배의 포인트를 즉시 지급</span>합니다.
               </p>
-              <p className="text-meet_text text-[0.8125rem] mt-2">
+              <p className="text-meet_text md:text-[0.875rem] text-[0.75rem] mt-2">
                 (모집 마감일 25년 12월 31일까지)
               </p>
             </div>
@@ -173,7 +180,7 @@ function InfluencerComponent() {
 
           <div
             style={{ boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.04)" }}
-            className="lg:w-[50rem] md:w-full w-full lg:h-[17.5rem] md:h-auto h-auto lg:px-[2.5rem] md:px-[2.5rem] px-10 lg:py-[2.5rem] md:py-[2.5rem] py-8
+            className="lg:w-[50rem] md:w-full w-full lg:px-[2.5rem] md:px-[2.5rem] px-10 lg:py-[2.5rem] md:py-[2.5rem] py-8
              bg-meet_white rounded-[2.5rem] flex lg:flex-row md:flex-row flex-col lg:items-center md:items-center items-center
              lg:gap-[3.75rem] md:gap-[3.75rem] gap-6 mt-10 border border-meet_gray"
           >
@@ -189,8 +196,8 @@ function InfluencerComponent() {
                 밋밋 뇌물
               </div>
 
-              <p className="text-meet_black font-extrabold lg:text-[1.5rem] md:text-[1.5rem] text-[1.2rem] leading-8 mt-3">
-                <span className="block">시급 54,000원</span>
+              <p className="text-meet_black font-extrabold lg:text-[2rem] md:text-[1.5rem] text-[1.25rem] lg:leading-[2.75rem] md:leading-[2.25rem] leading-[2rem] mt-3">
+                <span className="block">시급 108,000원</span>
                 <span className="block">밋밋 1기님께 드리는 뇌물</span>
               </p>
 
@@ -200,7 +207,7 @@ function InfluencerComponent() {
                 출금 신청하시면 익일 바로지급
               </p>
 
-              <p className="text-meet_text text-[0.8125rem] mt-2">
+              <p className="text-meet_text md:text-[0.875rem] text-[0.75rem] mt-2">
                 단 2배포인트 지급은 2026년 03월 31일 까지만 진행합니다
               </p>
             </div>
@@ -215,7 +222,7 @@ function InfluencerComponent() {
 
           <div
             style={{ boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.04)" }}
-            className="lg:w-[50rem] md:w-full w-full lg:h-[17.5rem] md:h-auto h-auto lg:px-[2.5rem] md:px-[2.5rem] px-10 lg:py-[2.5rem] md:py-[2.5rem] py-8
+            className="lg:w-[50rem] md:w-full w-full lg:px-[2.5rem] md:px-[2.5rem] px-10 lg:py-[2.5rem] md:py-[2.5rem] py-8
              bg-meet_white rounded-[2.5rem] flex lg:flex-row md:flex-row flex-col lg:items-center md:items-center items-center
              lg:justify-between md:justify-between justify-center lg:gap-0 md:gap-0 gap-6 mt-10 border border-meet_gray"
           >
@@ -225,7 +232,7 @@ function InfluencerComponent() {
               </div>
 
 
-              <p className="text-meet_black font-extrabold lg:text-[1.5rem] md:text-[1.5rem] text-[1.2rem] leading-8 mt-3">
+              <p className="text-meet_black font-extrabold lg:text-[2rem] md:text-[1.5rem] text-[1.25rem] lg:leading-[2.75rem] md:leading-[2.25rem] leading-[2rem] mt-3">
                 <span className="block">밋밋에서 이런</span>
                 <span className="block">여성분을 우대합니다</span>
               </p>
@@ -236,7 +243,7 @@ function InfluencerComponent() {
                 #투잡하고 싶은분
               </p>
 
-              <p className="text-meet_text text-[0.8125rem] tracking-tight mt-2">
+              <p className="text-meet_text md:text-[0.875rem] text-[0.75rem] tracking-tight mt-2">
                 #사교적이고 쾌활한 성격 #공감력과 배려심많은분
                 <br />
                 #우울한분 #심심한분 #능력있는 남성을 친구로
@@ -257,18 +264,18 @@ function InfluencerComponent() {
             style={{ boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.04)" }}
             className="bg-meet_white rounded-[2.5rem] lg:w-[50rem] md:w-full lg:px-0 md:px-0 px-10 py-10 flex flex-col justify-center mt-10 border border-meet_gray"
           >
-            <div className="text-[0.75rem] text-meet_white font-bold px-3 py-1 bg-meet_pink rounded-full w-auto inline-block">
+            <div className="text-[0.875rem] text-meet_white font-bold px-3 py-2 bg-meet_pink rounded-full w-auto inline-block">
               meetmeet
             </div>
-            <p className="text-meet_black font-extrabold text-[1.5rem] leading-8 mt-5 text-center">
-              밋밋은 건강한 글로벌
+            <p className="text-meet_black font-extrabold lg:text-[2rem] md:text-[1.5rem] text-[1.25rem] lg:leading-[2.75rem] md:leading-[2.25rem] leading-[2rem] mt-5 text-center">
+              밋밋은 국내외 능력있는
               <br />
-              성인커뮤니티 플랫폼 입니다.
+              남성들이 많은 성인 소셜 플랫폼 입니다
             </p>
-            <p className="text-meet_text text-[0.8125rem] mt-2 text-center">
+            <p className="text-meet_text lg:text-[1.125rem] md:text-[1rem] text-[0.8125rem] mt-2 text-center">
               지금 바로 밋밋을 시작하세요
             </p>
-            <img src="./img/influencer/chat.png" className="w-[22rem] mt-10" />
+            <img src="./img/influencer/chat.png" className="w-[24.8125rem] mt-10" />
             {/*<button className="bg-meet_pink hover:bg-meet_pink_hover text-meet_white font-bold text-[0.8125rem] rounded-[0.5rem] lg:w-[22rem] md:w-[22rem] w-full py-3 text-center mx-auto">*/}
             {/*  신청하기*/}
             {/*</button>*/}
@@ -309,7 +316,7 @@ function InfluencerComponent() {
       <div className="py-[6.25rem] md:px-8 px-5">
         <div
           style={{ boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.04)" }}
-          className="bg-meet_white rounded-[2.5rem] lg:w-[50rem] md:w-full lg:px-0 md:px-0 px-10 py-10 flex flex-col justify-center mt-10 border border-meet_gray"
+          className="bg-meet_white rounded-[2.5rem] lg:w-[50rem] md:w-full lg:px-0 md:px-0 px-10 py-10 flex flex-col justify-center border border-meet_gray"
         >
           <img src={BestIcon} className="w-[6.25rem] h-[6.25rem] mb-4" />
           <div className="py-2 px-3 bg-meet_pink shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)] rounded-[100px] text-[0.875rem] font-bold text-white leading-[20px] mb-4">
@@ -370,7 +377,7 @@ function InfluencerComponent() {
             className="flex flex-col justify-center items-center gap-3"
           >
             <img src={KaKaoIcon} className="md:w-[4.75rem] w-[3rem] md:h-[4.75rem] h-[3rem]" />
-            <div className="md:text-[1rem] text-[0.8125rem] font-bold leading-[1.5rem] text-white whitespace-nowrap">
+            <div className="md:text-[1rem] text-[0.8125rem] text-center font-bold leading-[1.5rem] text-white whitespace-nowrap">
               밋밋오피셜<br />
               카톡 채널 문의
             </div>
@@ -381,7 +388,7 @@ function InfluencerComponent() {
             className="flex flex-col justify-center items-center gap-3"
           >
             <img src={WhatsIcon} className="md:w-[4.75rem] w-[3rem] md:h-[4.75rem] h-[3rem]" />
-            <div className="md:text-[1rem] text-[0.8125rem] font-bold leading-[1.5rem] text-white whitespace-nowrap">
+            <div className="md:text-[1rem] text-[0.8125rem] text-center font-bold leading-[1.5rem] text-white whitespace-nowrap">
               밋밋오피셜<br />
               와츠 앱 문의
             </div>
@@ -392,7 +399,7 @@ function InfluencerComponent() {
             className="flex flex-col justify-center items-center gap-3"
           >
             <img src={TelegramIcon} className="md:w-[4.75rem] w-[3rem] md:h-[4.75rem] h-[3rem]" />
-            <div className="md:text-[1rem] text-[0.8125rem] font-bold leading-[1.5rem] text-white whitespace-nowrap">
+            <div className="md:text-[1rem] text-[0.8125rem] text-center font-bold leading-[1.5rem] text-white whitespace-nowrap">
               밋밋오피셜<br />
               텔레그램 문의
             </div>
