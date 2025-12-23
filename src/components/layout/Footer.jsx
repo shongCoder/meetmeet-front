@@ -198,17 +198,21 @@ const Footer = () => {
                   <span>안영상</span>
                   <span className="inline-block ml-2 font-medium">
                   사업자 등록번호 :
-                </span>
+                  </span>
                   <span>438-86-03453</span>
+                </div>
+                <div>
+                  <span className="inline-block font-medium">통신판매업 신고번호 :</span>
+                  <span>2025-용인기흥-02397호</span>
                 </div>
                 <div>
                   <div>
                     <span className="font-medium">주소 : </span>
-                    <span>경기도 광주시 문형산길 93, 202-에이8호</span>
+                    <span>경기도 용인시 기흥구 구갈로60번길 9-1, 6층 602-에이64(구갈동, 라파빌딩)</span>
                   </div>
                   <div>
                     <span className="font-medium">이메일 : </span>
-                    <span>경기도 용인시 기흥구 구갈로60번길 9-1, 6층 602-에이64(구갈동, 라파빌딩)</span>
+                    <span>meetmeet.help24@gmail.com</span>
                   </div>
                 </div>
               </div>
