@@ -138,9 +138,16 @@ function InfluencerComponent() {
           className="w-[18.375rem] mt-5 lg:hidden md:hidden block"
         />
         <div className="flex justify-center lg:mt-[3.75rem] md:mt-[3.75rem] mt-8 relative z-10">
-          <a href={KAKAO_LINK} target="_blank" className="bg-meet_pink hover:bg-meet_pink_hover lg:px-8 md:px-8 px-6 lg:py-5 md:py-5 py-3 shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)] text-meet_white font-bold rounded-full">
+          <button
+              onClick={() => {
+                document.getElementById("Apply")?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                });
+              }}
+              className="bg-meet_pink hover:bg-meet_pink_hover lg:px-8 md:px-8 px-6 lg:py-5 md:py-5 py-3 shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)] text-meet_white font-bold rounded-full">
             인플루언서 지원하기
-          </a>
+          </button>
         </div>
         <div className="lg:mt-[9rem] md:mt-[9rem] mt-7">
           <img src="./img/influencer/girls.png" className="w-[50rem]" />
@@ -346,7 +353,7 @@ function InfluencerComponent() {
       </div>
       {/* 이달의 베스트 출금현황 */}
 
-      <div className="w-full flex flex-col justify-center items-center py-[6.25rem] md:px-8 px-5 bg-[linear-gradient(to_bottom,#171717_0%,#1A1A1F_50%,#171717_100%)]">
+      <div id="Apply" className="w-full flex flex-col justify-center items-center py-[6.25rem] md:px-8 px-5 bg-[linear-gradient(to_bottom,#171717_0%,#1A1A1F_50%,#171717_100%)]">
         <div className="py-2 px-3 bg-meet_pink shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)] rounded-[100px] text-[0.875rem] font-bold text-white leading-[20px] mb-4">
           How to Apply
         </div>
